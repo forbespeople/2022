@@ -1,0 +1,2906 @@
+<!doctype html>
+<html class="bbg" lang="en-US">
+
+	<head>
+		<script>(function(H){H.className=H.className.replace(/\bbbg\b/,'bbg-js')})(document.documentElement);</script>
+		<meta http-equiv="X-UA-Compatible" content="IE=11"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"cd0676da66",applicationID:"545458313"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(10),c=t(11),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(12);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],7:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?p("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&p("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(f&&f<r.startTime)return;p("lcp",[r])}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||p("cls",[t])})}function a(t){if(t instanceof g&&!y){var e=Math.round(t.timeStamp),n={type:t.type};e<=l.now()?n.fid=l.now()-e:e>l.offset&&e<=Date.now()?(e-=l.offset,n.fid=l.now()-e):e=l.now(),y=!0,p("timing",["fi",e,n])}}function c(t){"hidden"===t&&(f=l.now(),p("pageHide",[f]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d,p=t("handle"),l=t("loader"),v=t(9),m=t(3),g=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){u=new PerformanceObserver(r);try{u.observe({entryTypes:["paint"]})}catch(h){}s=new PerformanceObserver(i);try{s.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}d=new PerformanceObserver(o);try{d.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var y=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(t){document.addEventListener(t,a,m(!1))})}v(c)}},{}],8:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],9:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],10:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],11:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],12:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){y[t]=m(t).concat(e)}function v(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:h,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(10),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!T++){var t=P.info=NREUM.info,e=g.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(O,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+P.offset],null,"api"),c("timing",["load",n]);var r=g.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=v+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===g.readyState&&o()}function o(){c("mark",["domContent",a()+P.offset],null,"api")}var a=t(5),c=t("handle"),f=t(10),u=t("ee"),s=t(8),d=t(6),p=t(2),l=t(3),v=p.getConfiguration("ssl")===!1?"http":"https",m=window,g=m.document,h="addEventListener",y="attachEvent",w=m.XMLHttpRequest,b=w&&w.prototype,E=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:w,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,O={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1212.min.js"},M=w&&b&&b[h]&&!/CriOS/.test(navigator.userAgent),P=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:M,userAgent:s,disabled:E};if(!E){t(1),t(7),g[h]?(g[h]("DOMContentLoaded",o,l(!1)),m[h]("load",r,l(!1))):(g[y]("onreadystatechange",i),m[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var T=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(11),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>2020 Annual Report | Bloomberg Philanthropies</title>
+<link rel='manifest' crossorigin='use-credentials' href='https://annualreport.bloomberg.org/wp-json/bloomberg/v1/manifest'>
+<meta name='theme-color' content='#500778'><meta name="description" content="Bloomberg Philanthropies works to ensure better, longer lives for the greatest number of people by focusing on five key areas."/>
+<link rel="canonical" href="https://annualreport.bloomberg.org/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="2020 Annual Report | Bloomberg Philanthropies" />
+<meta property="og:description" content="Bloomberg Philanthropies works to ensure better, longer lives for the greatest number of people by focusing on five key areas." />
+<meta property="og:url" content="https://annualreport.bloomberg.org/" />
+<meta property="og:site_name" content="2020 Annual Report " />
+<meta property="og:image" content="https://assets.bbhub.io/dotorg/sites/65/2021/02/AR-OG-v1.jpg" />
+<meta property="og:image:secure_url" content="https://assets.bbhub.io/dotorg/sites/65/2021/02/AR-OG-v1.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Bloomberg Philanthropies works to ensure better, longer lives for the greatest number of people by focusing on five key areas." />
+<meta name="twitter:title" content="2020 Annual Report | Bloomberg Philanthropies" />
+<meta name="twitter:image" content="https://assets.bbhub.io/dotorg/sites/65/2021/02/AR-OG-v1.jpg" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://annualreport.bloomberg.org/#website","url":"https://annualreport.bloomberg.org/","name":"2020 Annual Report ","potentialAction":{"@type":"SearchAction","target":"https://annualreport.bloomberg.org/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://annualreport.bloomberg.org/#webpage","url":"https://annualreport.bloomberg.org/","inLanguage":"en-US","name":"2020 Annual Report | Bloomberg Philanthropies","isPartOf":{"@id":"https://annualreport.bloomberg.org/#website"},"datePublished":"2016-04-04T17:37:24+00:00","dateModified":"2021-03-09T21:52:07+00:00","description":"Bloomberg Philanthropies works to ensure better, longer lives for the greatest number of people by focusing on five key areas."}]}</script>
+<link rel='dns-prefetch' href='//annualreport.bloomberg.org' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://annualreport.bloomberg.org/wp-includes/css/dist/block-library/style.min.css?ver=62e44ee58d18941c34ba8ac1739920b55f5bec286ed420bc8bcf49a67ac9b345' type='text/css' media='all' />
+<link rel='stylesheet' id='font-service-css'  href='https://assets.bwbx.io/font-service/css/AvenirNextPForBBG:400,400i,500,500i,600,600i,700,700i|QuotesBrush/styled-font-face.css?ver=62e44ee58d18941c34ba8ac1739920b55f5bec286ed420bc8bcf49a67ac9b345' type='text/css' media='all' />
+<link rel='stylesheet' id='main-css-css'  href='https://annualreport.bloomberg.org/content/themes/report2017/dist/main.710b931f.css?ver=62e44ee58d18941c34ba8ac1739920b55f5bec286ed420bc8bcf49a67ac9b345' type='text/css' media='all' />
+<style id='main-css-inline-css' type='text/css'>
+.site-header:after { background-color: #ffffff; }.menu a, .menu__button--icon { color: #500778 !important; }
+</style>
+<link rel='stylesheet' id='js_composer_front-css'  href='https://annualreport.bloomberg.org/content/plugins/wpbakery-visual-composer/assets/css/js_composer.min.css?ver=6.4.1' type='text/css' media='all' />
+<link rel='https://api.w.org/' href='https://annualreport.bloomberg.org/wp-json/' />
+
+<link rel='shortlink' href='https://annualreport.bloomberg.org/' />
+<!-- Google Tag Manager -->
+
+
+<script>
+window.addEventListener("load", function() {
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-57DQKR6');
+});
+</script>
+<!-- End Google Tag Manager -->
+<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<link rel="icon" href="https://assets.bbhub.io/dotorg/sites/65/2021/01/cropped-Purple-favicon-opt_512x512.png" sizes="32x32" />
+<link rel="icon" href="https://assets.bbhub.io/dotorg/sites/65/2021/01/cropped-Purple-favicon-opt_512x512.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://assets.bbhub.io/dotorg/sites/65/2021/01/cropped-Purple-favicon-opt_512x512.png" />
+<meta name="msapplication-TileImage" content="https://assets.bbhub.io/dotorg/sites/65/2021/01/cropped-Purple-favicon-opt_512x512.png" />
+		<style type="text/css" id="wp-custom-css">
+			
+@media (min-width: 768px) {
+.menu__list {
+    font-size: 32px;
+    line-height: 1.5;
+}
+}
+.hero__content h1{
+      font-family: QuotesBrush, AvenirNextPForBBG, Helvetica, Arial, sans-serif;
+  }
+
+  .hero__content h2{
+      font-family: QuotesBrush, AvenirNextPForBBG, Helvetica, Arial, sans-serif;
+  }
+
+.hero h2 {
+	font-size: 96px;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+	.hero h2 {
+	font-size: 60px !important;
+ }
+}
+
+blockquote.white {
+    color: #fff;
+    border-left: 5px solid #fff !important;
+}
+
+.white {
+	color: #fff;
+}
+
+.white a {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid #fff;
+}
+
+.white a:hover {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 2px solid #fff;
+}
+
+.home-global-reach{
+	margin-bottom: 0px !important;
+}
+
+.site-header__logo {
+    background: url("https://assets.bbhub.io\/dotorg\/sites\/65/2021/02/AnnualReport2020_lockup-01.svg") 50%/contain no-repeat;
+	    padding-left: 320px;
+}
+
+.approach h5 {
+	font-size:18px !important;
+	font-weight:normal;
+	padding-bottom: 15px !important;
+	margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.approach h5:after {
+
+    content: "";
+    width: 80px;
+    position: relative;
+    bottom: 5px;
+    left: 0;
+    margin-left: 0;
+    height: 0;
+    border-bottom: 2px solid;
+    display: block;
+    margin-top: 18px;
+}
+
+/* 2019 - Dark Blue */
+.bg-gradient-darkblue, .copy-bg.overlay-darkblue .copy, body.global-color-darkblue .heading-banner:after, body.global-color-darkblue .v-grad {
+    background-image: linear-gradient(90deg,#004685 0,#004685);
+}
+
+body.global-color-darkblue .wpb_text_column blockquote {
+    border-color: #004685;
+    color: #004685;
+}
+
+.global-color-darkblue .hero__image {
+    background-color: #004685 !important;
+}
+
+/* 2019 - Blue */
+.bg-gradient-blue, .copy-bg.overlay-blue .copy, body.global-color-blue .heading-banner:after, body.global-color-blue .v-grad {
+    background-image: linear-gradient(90deg,#E1745B 0,#E1745B);
+}
+
+body.global-color-blue .wpb_text_column blockquote {
+    border-color: #E1745B;
+    color: #E1745B;
+}
+
+.global-color-blue .hero__image {
+    background-color: #E1745B !important;
+}
+
+/* 2019 - Green */
+.bg-gradient-green, .copy-bg.overlay-green .copy, body.global-color-green .heading-banner:after, body.global-color-green .v-grad {
+    background-image: linear-gradient(90deg,#68b546 0,#68b546);
+}
+
+body.global-color-green .wpb_text_column blockquote {
+    border-color: #68b546;
+    color: #68b546;
+}
+
+.global-color-green .hero__image {
+    background-color: #68b546 !important;
+}
+
+
+/* 2019 - Pink */
+.bg-gradient-pink, .copy-bg.overlay-pink .copy, body.global-color-pink .heading-banner:after, body.global-color-pink .v-grad {
+    background-image: linear-gradient(90deg,#ef456e 0,#ef456e);
+}
+
+body.global-color-pink .wpb_text_column blockquote {
+    border-color: #ef456e;
+    color: #ef456e;
+}
+
+/* 2019 - Pink Purple */
+.bg-gradient-pinkpurple, .copy-bg.overlay-pinkpurple .copy, body.global-color-pink .heading-banner:after, body.global-color-pinkpurple .v-grad {
+    background-image: linear-gradient(90deg,#89317a 0,#89317a);
+}
+
+body.global-color-pinkpurple .wpb_text_column blockquote {
+    border-color:#89317a;
+    color:#89317a;
+}
+
+/* 2019 - Gray USED FOR TEAL */
+.bg-gradient-gray, .copy-bg.overlay-gray .copy, body.global-color-gray .heading-banner:after, body.global-color-gray .v-grad {
+    background-image: linear-gradient(90deg,#42b7b7 0,#42b7b7);
+}
+
+body.global-color-gray .wpb_text_column blockquote {
+    border-color: #42b7b7;
+    color: #42b7b7;
+}
+
+
+.global-color-blue .hero__image {
+    background-color: #42b7b7;
+}
+
+
+
+@media (min-width: 1340px) {
+.bbg-nav-block__link {
+    min-height: 250px;
+    width: 625px;
+}
+	
+}
+
+@media (max-width: 768px) {
+	.site-header__logo {
+	    padding-left: 240px;
+}
+}
+
+
+/* 2019 Podcast headers */
+.podcast-hdr-arts::before {
+    content: "";
+    display:block;
+    background: url("https://assets.bbhub.io/dotorg/sites/65/2021/01/pod-icon-arts.svg") no-repeat;
+    width: 17px;
+    height: 32px;
+    margin: 0 0 18px 0;
+}
+
+.podcast-hdr-arts {
+    font-size: 32px;
+    font-weight: 700;
+    line-height:40px;
+    color: #ef456e;         /* pillar color */
+    padding-bottom: 12px;
+    border-bottom: 5px solid #ef456e;   /* pillar color */
+}
+
+.podcast-hdr-edu::before {
+    content: "";
+    display:block;
+    background: url("https://assets.bbhub.io/dotorg/sites/65/2021/01/pod-icon-edu.svg") no-repeat;
+    width: 17px;
+    height: 32px;
+    margin: 0 0 18px 0;
+}
+
+.podcast-hdr-edu {
+    font-size: 32px;
+    font-weight: 700;
+    line-height:40px;
+    color: #004685;         /* pillar color */
+    padding-bottom: 12px;
+    border-bottom: 5px solid #004685;   /* pillar color */
+}
+
+.podcast-hdr-enviro::before {
+    content: "";
+    display:block;
+    background: url("https://assets.bbhub.io/dotorg/sites/65/2021/01/pod-icon-enviro.svg") no-repeat;
+    width: 17px;
+    height: 32px;
+    margin: 0 0 18px 0;
+}
+
+.podcast-hdr-enviro {
+    font-size: 32px;
+    font-weight: 700;
+    line-height:40px;
+    color: #68B546;         /* pillar color */
+    padding-bottom: 12px;
+    border-bottom: 5px solid #68B546;   /* pillar color */
+}
+
+.podcast-hdr-gi::before {
+    content: "";
+    display:block;
+    background: url("https://assets.bbhub.io/dotorg/sites/65/2021/01/pod-icon-gi.svg") no-repeat;
+    width: 17px;
+    height: 32px;
+    margin: 0 0 18px 0;
+}
+
+.podcast-hdr-gi {
+    font-size: 32px;
+    font-weight: 700;
+    line-height:40px;
+    color: #42b7b7;         /* pillar color */
+    padding-bottom: 12px;
+    border-bottom: 5px solid #42b7b7;   /* pillar color */
+}
+
+.podcast-hdr-ph::before {
+    content: "";
+    display:block;
+    background: url("https://assets.bbhub.io/dotorg/sites/65/2021/02/pod-icon-ph-20.svg") no-repeat;
+    width: 17px;
+    height: 32px;
+    margin: 0 0 18px 0;
+}
+
+.podcast-hdr-ph {
+    font-size: 32px;
+    font-weight: 700;
+    line-height:40px;
+    color: #E1745B;         /* pillar color */
+    padding-bottom: 12px;
+    border-bottom: 5px solid #E1745B;   /* pillar color */
+}
+
+.podcast-hdr-fp::before {
+    content: "";
+    display:block;
+    background: url("https://assets.bbhub.io/dotorg/sites/65/2021/01/pod-icon-fp.svg") no-repeat;
+    width: 17px;
+    height: 32px;
+    margin: 0 0 18px 0;
+}
+
+.podcast-hdr-fp {
+    font-size: 32px;
+    font-weight: 700;
+    line-height:40px;
+    color: #AC4399;         /* pillar color */
+    padding-bottom: 12px;
+    border-bottom: 5px solid #AC4399;   /* pillar color */
+}
+
+.podcast-hdr-ba::before {
+    content: "";
+    display:block;
+    background: url("https://assets.bbhub.io/dotorg/sites/65/2021/01/pod-icon-ba.svg") no-repeat;
+    width: 17px;
+    height: 32px;
+    margin: 0 0 18px 0;
+}
+
+.podcast-hdr-ba {
+    font-size: 32px;
+    font-weight: 700;
+    line-height:40px;
+    color: #F05423;         /* pillar color */
+    padding-bottom: 12px;
+    border-bottom: 5px solid #F05423;   /* pillar color */
+}
+
+.podcast-hdr-bp::before {
+    content: "";
+    display:block;
+    background: url("https://assets.bbhub.io/dotorg/sites/65/2021/02/podcast-icon-purple.svg") no-repeat;
+    width: 17px;
+    height: 32px;
+    margin: 0 0 18px 0;
+}
+
+.podcast-hdr-bp {
+    font-size: 32px;
+    font-weight: 700;
+    line-height:40px;
+    color: #500778;         /* pillar color */
+    padding-bottom: 12px;
+    border-bottom: 5px solid #500778;   /* pillar color */
+}
+
+
+.podcast-hdr-spotlight::before {
+    content: "";
+    display:block;
+    background: url("https://assets.bbhub.io/dotorg/sites/65/2021/01/pod-icon-white.svg") no-repeat;
+    width: 17px;
+    height: 32px;
+    margin: 0 0 18px 0;
+}
+
+.podcast-hdr-spotlight {
+    font-size: 32px;
+    font-weight: 700;
+    line-height:40px;
+    color: #fff;         /* pillar color */
+    padding-bottom: 12px;
+    border-bottom: 5px solid #fff;   /* pillar color */
+}
+
+/* Attribution */
+.source {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+/* Video Headers */
+.video-hdr-bp::before {
+    content: "";
+    display:block;
+    background: url("https://assets.bbhub.io/dotorg/sites/65/2021/01/icon-video-bp.svg") no-repeat;
+    width: 32px;
+    height: 32px;
+	margin: 0 0 12px 0;
+}
+
+.video-hdr-bp{
+		font-size: 32px;
+    font-weight: 700;
+    line-height:40px;
+	color: #500778;
+}
+
+.video-hdr-edu::before {
+    content: "";
+    display:block;
+    background: url("https://assets.bbhub.io/dotorg/sites/65/2021/01/icon-video-edu.svg") no-repeat;
+    width: 32px;
+    height: 32px;
+	margin: 0 0 12px 0;
+}
+
+.video-hdr-edu{
+		font-size: 32px;
+    font-weight: 700;
+    line-height:40px;
+	color: #004685;
+}
+
+.video-hdr-ba::before {
+    content: "";
+    display:block;
+    background: url("https://assets.bbhub.io/dotorg/sites/65/2021/01/icon-video-ba.svg") no-repeat;
+    width: 32px;
+    height: 32px;
+	margin: 0 0 12px 0;
+}
+
+.video-hdr-ba{
+		font-size: 32px;
+    font-weight: 700;
+    line-height:40px;
+	color: #F05423;
+}
+
+.video-hdr-gi::before {
+    content: "";
+    display:block;
+    background: url("https://assets.bbhub.io/dotorg/sites/65/2021/01/icon-video-gi.svg") no-repeat;
+    width: 32px;
+    height: 32px;
+	margin: 0 0 12px 0;
+}
+
+
+.video-hdr-gi{
+		font-size: 32px;
+    font-weight: 700;
+    line-height:40px;
+	color: #42B7B7;
+}
+
+.video-hdr-arts::before {
+    content: "";
+    display:block;
+    background: url("https://assets.bbhub.io/dotorg/sites/65/2021/01/icon-video-arts.svg") no-repeat;
+    width: 32px;
+    height: 32px;
+	margin: 0 0 12px 0;
+}
+
+.video-hdr-arts{
+		font-size: 32px;
+    font-weight: 700;
+    line-height:40px;
+	color: #EF456E;
+}
+
+.video-hdr-ph::before {
+    content: "";
+    display:block;
+    background: url("https://assets.bbhub.io/dotorg/sites/65/2021/02/icon-video-ph-20.svg") no-repeat;
+    width: 32px;
+    height: 32px;
+	margin: 0 0 12px 0;
+}
+
+.video-hdr-ph{
+		font-size: 32px;
+    font-weight: 700;
+    line-height:40px;
+	color: #E1745B;
+}
+
+.video-hdr-enviro::before {
+    content: "";
+    display:block;
+    background: url("https://assets.bbhub.io/dotorg/sites/65/2021/01/icon-video-enviro.svg") no-repeat;
+    width: 32px;
+    height: 32px;
+	margin: 0 0 12px 0;
+}
+
+.video-hdr-enviro{
+		font-size: 32px;
+    font-weight: 700;
+    line-height:40px;
+	color: #68B546;
+}
+
+.video-hdr-fp::before {
+    content: "";
+    display:block;
+    background: url("https://assets.bbhub.io/dotorg/sites/65/2021/01/icon-video-fp.svg") no-repeat;
+    width: 32px;
+    height: 32px;
+	margin: 0 0 12px 0;
+}
+
+.video-hdr-fp{
+		font-size: 32px;
+    font-weight: 700;
+    line-height:40px;
+	color: #AC4399;
+}
+
+.video-hdr-spotlight::before {
+    content: "";
+    display:block;
+    background: url("https://assets.bbhub.io/dotorg/sites/65/2021/01/icon-video-bp-white.svg") no-repeat;
+    width: 32px;
+    height: 32px;
+	margin: 0 0 12px 0;
+}
+
+.video-hdr-spotlight{
+		font-size: 32px;
+    font-weight: 700;
+    line-height:40px;
+	color: #fff;
+}
+
+		</style>
+		<style type="text/css" data-type="vc_custom-css">.ceros-map {
+    max-width:860px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+    .hero {
+        height: 85vh !important;
+    }
+}
+.hero__content h2 {
+    font-family: AvenirNextPForBBG, Helvetica, Arial, sans-serif !important;
+}
+
+.hero h2 {
+    font-size: 55px !important;
+      letter-spacing: normal  !important;
+     font-weight:700 !important;
+}
+
+@media (max-width: 767px) {
+.hero h2 {
+    font-size: 21px  !important;
+     letter-spacing: normal  !important;
+     font-weight:700 !important;
+}
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+.hero h2 {
+    font-size: 27px !important;
+       letter-spacing: normal  !important;
+     font-weight:700 !important;
+}
+}
+
+
+
+.disc {
+    margin-top: 0;
+}
+
+
+.neg-margin {
+    margin-left:-15px;
+    margin-right:-15px;
+}
+
+
+
+.home-title-ar {
+    font-size:60px;
+}
+
+.home-title-ar:after {
+    content: "";
+    width: 80px;
+    position: absolute;
+    bottom: 1.3em;
+    left: 50%;
+    height: 0;
+    margin-left: -40px;
+    margin-bottom: 90px;
+    /*border-bottom: 3px solid;*/
+    border-bottom: none;
+    display: block;
+}
+
+/*.home-baci {
+    background-color:#500778;
+    color:#FFFFFF;
+}*/
+
+.home-global-reach p {
+    margin-bottom: 10px;
+}
+
+.home-otg {
+    border-style: solid;
+    border-width: 5px;
+    border-color: #500778;
+}
+
+.home-otg-h2 {
+    padding-top: 50px;
+    color: #500778;
+}
+
+
+/* The Arts */
+.ph-letter-art a{
+    color:#EE456E;
+}
+.ph-letter-art a:hover{
+    color:#EE456E;
+}
+
+/* Public Health */
+.ph-letter-pubhealth a{
+    color:#FBAF33;
+}
+
+.ph-letter-pubhealth a:hover{
+    color:#FBAF33;
+}
+
+/* Education */
+.ph-letter-edu a{
+    color:#004585;
+}
+
+.ph-letter-edu a:hover{
+    color:#004585;
+}
+
+/* Bloomberg Philanthropies */
+.ph-letter-bp a{
+    color:#500778;
+}
+
+.ph-letter-bp a:hover{
+    color:#500778;
+}
+
+/* Government Innovation */
+.ph-letter-govinnov a{
+    color:#70CACB;
+}
+
+.ph-letter-govinnov a:hover{
+    color:#70CACB;
+}
+
+/* Bloomberg Associates */
+.ph-letter-ba a{
+    color:#F05422;
+}
+
+.ph-letter-ba a:hover{
+    color:#F05422;
+}
+
+/* The Arts */
+.ph-letter-art a{
+    color:#EE456E;
+}
+.ph-letter-art a:hover{
+    color:#EE456E;
+}
+
+/* Environment */
+.ph-letter-enviro a{
+    color:#479437;
+}
+.ph-letter-enviro a:hover{
+    color:#479437;
+}
+
+/* Founder's Projects */
+.ph-letter-fp a{
+    color:#AB4398;
+}
+
+.ph-letter-fp a:hover{
+    color:#AB4398;
+}
+
+.sign img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/*.home-fullwidth {
+    margin-left: -15px;
+    width: calc(100% + 30px);
+}
+
+.home-img-col-left {
+    margin-left: -15px;
+}
+
+.home-img-col-right {
+    margin-right: -15px;
+}
+*/
+
+.vc_row--approach {
+    margin-left:0px;
+    margin-right:0px;
+}
+
+.vc_row--approach .wpb_text_column {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.vc_row--approach>.vc_column_container>.vc_column-inner .vc_btn3-container {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 0;
+}
+
+.vc_row--approach>.vc_column_container>.vc_column-inner p {
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.stats {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+.bbg-statistic-block .bbg-statistic-block--large-text {
+    font-weight: bold;
+    margin:0;
+}
+.bbg-statistic-block>p {
+    margin:0;
+}
+
+.bbg-statistic-block .bbg-statistic-block--small-text {
+    font-weight:500;
+}
+
+@media (max-width: 1339px) and (min-width: 1024px) {
+.vc_row--approach>.vc_column_container>.vc_column-inner p {
+    font-size: 20px;
+}
+
+.vc_row--approach .wpb_text_column {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.vc_row--approach>.vc_column_container>.vc_column-inner .vc_btn3-container {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 0;
+}
+
+.vc_row--approach>.vc_column_container {
+    position: relative;
+    padding: 55% 0 0 50%;
+}
+}
+
+.map-links{
+    /*padding-top: 50px;*/
+    background-color: #C6B0D6;   
+}
+
+.map{
+    background-color: #C6B0D6;   
+}
+
+.global-reach{
+    color: #321952;
+    background-color: #C6B0D6; 
+}
+
+.home-title-row{
+    background-color: #FFFFFF;
+}
+/*
+.hero__image{
+    height:150% !important;
+}
+*/
+
+
+
+@media (max-width: 768px) {
+    .bbg-carousel-pagination, .bbg-controls {
+        display: none;
+    }
+    }
+    
+
+
+
+@media (max-width: 768px) {
+.bbg-pagination--list-wrapper, .bbg-control{
+    display: none !important; 
+}
+}</style><style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1612812554032{padding-top: 30px !important;}.vc_custom_1612812566547{padding-top: 30px !important;}.vc_custom_1612362905848{padding-top: 30px !important;}.vc_custom_1612812576501{padding-top: 30px !important;}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>	</head>
+
+	<body class="home page-template-default page page-id-3 no-js global-color-default navbar-light wpb-js-composer js-comp-ver-6.4.1 vc_responsive">
+		<!-- Google Tag Manager -->
+<noscript>
+	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57DQKR6" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager -->
+
+		<div class="site-wrap">
+
+			<header class="site-header">
+
+				<a rel="home" class="site-header__logo" href="https://annualreport.bloomberg.org/">Bloomberg Philanthropies</a>
+
+									<a href="https://www.bloomberg.org/" class="site-header__menu-link">Bloomberg.org</a>
+				
+				<a class="menu__button menu__button--text" href="#show-menu">Menu</a>
+
+			</header>
+
+			<nav id="show-menu" class="menu"><a class="menu__close" href="#top">Close</a><ul id="menu-main" class="menu__list"><li id="menu-item-4045" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4045 purple"><a href="https://annualreport.bloomberg.org/annual-letter/" data-element="menu-main" data-description="Annual Letter on Philanthropy">Annual Letter on Philanthropy</a></li>
+<li id="menu-item-4046" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4046 purple"><a href="https://annualreport.bloomberg.org/ceo-letter/" data-element="menu-main" data-description="CEO Letter">CEO Letter</a></li>
+<li id="menu-item-4614" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4614 purple"><a href="https://annualreport.bloomberg.org/covid-19-response/" data-element="menu-main" data-description="COVID-19 Response">COVID-19 Response</a></li>
+<li id="menu-item-49" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49 pink"><a href="https://annualreport.bloomberg.org/arts/" data-element="menu-main" data-description="Arts">Arts</a></li>
+<li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57 green"><a href="https://annualreport.bloomberg.org/environment/" data-element="menu-main" data-description="Environment">Environment</a></li>
+<li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55 darkblue"><a href="https://annualreport.bloomberg.org/education/" data-element="menu-main" data-description="Education">Education</a></li>
+<li id="menu-item-3720" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3720 blue"><a href="https://annualreport.bloomberg.org/public-health/" data-element="menu-main" data-description="Public Health">Public Health</a></li>
+<li id="menu-item-63" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-63"><a href="https://annualreport.bloomberg.org/government/" data-element="menu-main" data-description="Government Innovation">Government Innovation</a></li>
+<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51 orange"><a href="https://annualreport.bloomberg.org/bloomberg-associates/" data-element="menu-main" data-description="Bloomberg Associates">Bloomberg Associates</a></li>
+<li id="menu-item-59" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-59 pinkpurple"><a href="https://annualreport.bloomberg.org/founders-projects/" data-element="menu-main" data-description="Founder&#039;s Projects">Founder&#8217;s Projects</a></li>
+<li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53 purple"><a href="https://annualreport.bloomberg.org/bloomberg-lp/" data-element="menu-main" data-description="Bloomberg L.P.">Bloomberg L.P.</a></li>
+</ul></nav>	<main class="page-wrap">
+													<div id="content" class="container page-content">
+					<div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><style>#bbg-hero-61e0387f2e78a { height: 211px; }@media (min-width: 768px) { #bbg-hero-61e0387f2e78a { height: 480px; } }@media (min-width: 1024px) { #bbg-hero-61e0387f2e78a { height: 960px; } }</style><div id='bbg-hero-61e0387f2e78a' class='hero hero--video hero--mobile-video' data-duration='10000' data-video-640="https://player.vimeo.com/external/510323548.sd.mp4?s=25294d816bb7d7104e94e751c5fa1c0e40376d2c&#038;profile_id=164" data-video-960="https://player.vimeo.com/external/510323548.sd.mp4?s=25294d816bb7d7104e94e751c5fa1c0e40376d2c&#038;profile_id=165" data-video-1280="https://player.vimeo.com/external/510323548.hd.mp4?s=dc35edadefbd37e057ec0a9472813172ba4e06b7&#038;profile_id=174" data-video-1920="https://player.vimeo.com/external/510323548.hd.mp4?s=dc35edadefbd37e057ec0a9472813172ba4e06b7&#038;profile_id=175"><div class='hero__image'></div><div class='hero__content'></div></div><div id="hero-text-61e0387f2e79e" class="hero-text" data-time="0"><h2>Engage strong partners</h2></div><div id="hero-text-61e0387f2e7b7" class="hero-text" data-time="5"><h2>Look for unmet needs</h2></div><div id="hero-text-61e0387f2e7c9" class="hero-text" data-time="10"><h2>Focus on cities</h2></div><div id="hero-text-61e0387f2e7da" class="hero-text" data-time="14"><h2>Remain flexible</h2></div><div id="hero-text-61e0387f2e7ea" class="hero-text" data-time="20"><h2>Lead from the front</h2></div><div id="hero-text-61e0387f2e7f9" class="hero-text" data-time="26"><h2></h2></div><div id="hero-text-61e0387f2e809" class="hero-text" data-time="26"><h2>Rely on data</h2></div><div id="hero-text-61e0387f2e819" class="hero-text" data-time="31"><h2>Utilize advocacy and lobbying</h2></div><div id="hero-text-61e0387f2e828" class="hero-text" data-time="35"><h2>Ensuring better, longer lives for the greatest number of people</h2></div><div id="hero-text-61e0387f2e838" class="hero-text" data-time="42"><h2></h2></div></div></div></div></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_empty_space"   style="height: 64px"><span class="vc_empty_space_inner"></span></div>
+	<div class="wpb_text_column wpb_content_element  home-title-ar" >
+		<div class="wpb_wrapper">
+			<p style="text-align: center; line-height: 68px; padding-bottom: 15px;"><strong>Annual Report 2020</strong></p>
+
+		</div>
+	</div>
+
+	<div class="wpb_text_column wpb_content_element " >
+		<div class="wpb_wrapper">
+			<p style="text-align: left;">			<div class="social-shares">
+				<a
+					class="social-shares__action"
+					href="#social-share-61e0387f2f1a7"
+				>
+					Share				</a>
+				<div class="social-shares__container" id="social-share-61e0387f2f1a7">
+					<a
+						target="_blank"
+						rel="noopener"
+						class="social-shares__link social-shares__link--twitter"
+						data-element="social-share"
+						data-description="Twitter"
+						href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fannualreport.bloomberg.org%2F&amp;text=2020%20Annual%20Report&amp;via=BloombergDotOrg"
+					>
+						Twitter					</a>
+					<a
+						target="_blank"
+						rel="noopener"
+						class="social-shares__link social-shares__link--linkedin"
+						data-element="social-share"
+						data-description="LinkedIn"
+						href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fannualreport.bloomberg.org%2F&amp;title=2020%20Annual%20Report&amp;source=Bloomberg"
+					>
+						LinkedIn					</a>
+					<a
+						target="_blank"
+						rel="noopener"
+						class="social-shares__link social-shares__link--facebook"
+						data-element="social-share"
+						data-description="Facebook"
+						href="https://www.facebook.com/share.php?u=https%3A%2F%2Fannualreport.bloomberg.org%2F"
+					>
+						Facebook					</a>
+					<a
+						target="_blank"
+						rel="noopener"
+						class="social-shares__link social-shares__link--email"
+						data-element="social-share"
+						data-description="Email"
+						href="mailto:?subject=2020%20Annual%20Report&amp;body=https%3A%2F%2Fannualreport.bloomberg.org%2F"
+					>
+						Email					</a>
+				</div>
+			</div>
+			Bloomberg Philanthropies works to ensure better, longer lives for the greatest number of people by focusing on five key areas – <a href="https://annualreport.bloomberg.org/arts/">arts</a>, <a href="https://annualreport.bloomberg.org/education/">education</a>, <a href="https://annualreport.bloomberg.org/environment/">environment</a>, <a href="https://annualreport.bloomberg.org/government/">government innovation</a>, and <a href="https://annualreport.bloomberg.org/public-health/">public health</a> – as well as through <a href="https://annualreport.bloomberg.org/founders-projects/">founder&#8217;s projects</a>, the pro bono consultancy <a href="https://annualreport.bloomberg.org/bloomberg-associates/">Bloomberg Associates</a>, and <a href="https://annualreport.bloomberg.org/bloomberg-lp/">corporate philanthropy</a> at Bloomberg L.P.</p>
+<p style="text-align: left;">In 2020 this included the launch of <a href="https://annualreport.bloomberg.org/covid-19-response/">many new efforts</a> to meet urgent challenges related to the COVID-19 pandemic.</p>
+
+		</div>
+	</div>
+<div class="vc_empty_space"   style="height: 24px"><span class="vc_empty_space_inner"></span></div></div></div></div></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid stats"><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper">
+<div class="bbg-statistic-block">
+	<p class="sr-only">$1.6B Invested in 2020</p>
+	<p class="bbg-statistic-block--large-text" aria-hidden="true">$<span bbg-animated-number class='bbg-animated-number' data-start='0' data-value='1.6' data-duration='100' data-delay='100'>1.6</span>B</p>
+	<p class="bbg-statistic-block--small-text" aria-hidden="true">Invested in 2020</p>
+</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper">
+<div class="bbg-statistic-block">
+	<p class="sr-only">810 Cities</p>
+	<p class="bbg-statistic-block--large-text" aria-hidden="true"><span bbg-animated-number class='bbg-animated-number' data-start='0' data-value='810' data-duration='3500' data-delay='100'>810</span></p>
+	<p class="bbg-statistic-block--small-text" aria-hidden="true">Cities</p>
+</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper">
+<div class="bbg-statistic-block">
+	<p class="sr-only">170 Countries</p>
+	<p class="bbg-statistic-block--large-text" aria-hidden="true"><span bbg-animated-number class='bbg-animated-number' data-start='0' data-value='170' data-duration='3000' data-delay='100'>170</span></p>
+	<p class="bbg-statistic-block--small-text" aria-hidden="true">Countries</p>
+</div>
+</div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div id="bp-achievements-2020" class="vc_row wpb_row vc_row-fluid wpb_text_column"><div class="neg-margin wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_empty_space"   style="height: 30px"><span class="vc_empty_space_inner"></span></div><style>#bloomberg-video-61e0387f41776 .bloomberg-video__wrapper { background-image: url(https://assets.bbhub.io/dotorg/sites/65/2021/02/thumbnail_04_v02-150x150.jpg); }@media (min-width: 150px) { #bloomberg-video-61e0387f41776 .bloomberg-video__wrapper { background-image: url(https://assets.bbhub.io/dotorg/sites/65/2021/02/thumbnail_04_v02-300x169.jpg); } }@media (min-width: 300px) { #bloomberg-video-61e0387f41776 .bloomberg-video__wrapper { background-image: url(https://assets.bbhub.io/dotorg/sites/65/2021/02/thumbnail_04_v02-768x432.jpg); } }@media (min-width: 768px) { #bloomberg-video-61e0387f41776 .bloomberg-video__wrapper { background-image: url(https://assets.bbhub.io/dotorg/sites/65/2021/02/thumbnail_04_v02-1024x576.jpg); } }</style><div class='bloomberg-video' data-service='youtube-video' data-aspect-ratio='16:9' id='bloomberg-video-61e0387f41776'><div class='bloomberg-video__wrapper bloomberg-video__wrapper--foundation'>				<a
+					class="bloomberg-video__link"
+					href="https://www.youtube.com/watch?v=iPvJX6fFhb4"
+					target="_blank"
+					rel="noopener"
+					title=""
+					data-video-id="iPvJX6fFhb4"
+					data-video-title="20 of Bloomberg Philanthropies’ Biggest Achievements in 2020"
+					data-modestbranding="1"
+					data-controls="1"
+					data-is-playlist="0"
+					data-playlist-starting-video=""
+					data-start-time="0"
+					aria-label="Play Video"
+				></a>
+					</div></div></div></div></div></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_empty_space"   style="height: 15px"><span class="vc_empty_space_inner"></span></div>
+	<div class="wpb_text_column wpb_content_element  download-link" >
+		<div class="wpb_wrapper">
+			<p style="text-align: center;"><a style="font-size: 28px;" href="https://assets.bbhub.io/dotorg/sites/65/2021/02/AnnualReport2020.pdf" target="_blank" rel="noopener noreferrer">Download the Report <i class="icon-download"></i></a></p>
+
+		</div>
+	</div>
+<div class="vc_empty_space"   style="height: 30px"><span class="vc_empty_space_inner"></span></div></div></div></div></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text" ><span class="vc_sep_holder vc_sep_holder_l"><span  style="border-color:#500778;" class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span  style="border-color:#500778;" class="vc_sep_line"></span></span>
+</div><div class="vc_empty_space"   style="height: 20px"><span class="vc_empty_space_inner"></span></div></div></div></div></div><div class="vc_row wpb_row vc_row-fluid home-fullwidth"><div class="home-img-col-left wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class=" vc_align_center narrow overlay-image overlay-green">
+		<div class="wpb_wrapper">
+			<div class="vc_single_image-wrapper"><img width="1000" height="1357" src="https://assets.bbhub.io/dotorg/sites/65/2019/05/mike-bloomberg-letter1.jpg" class="vc_single_image-img attachment-full" alt="Michael Bloomberg" srcset="https://assets.bbhub.io/dotorg/sites/65/2019/05/mike-bloomberg-letter1.jpg 1000w, https://assets.bbhub.io/dotorg/sites/65/2019/05/mike-bloomberg-letter1-221x300.jpg 221w, https://assets.bbhub.io/dotorg/sites/65/2019/05/mike-bloomberg-letter1-768x1042.jpg 768w, https://assets.bbhub.io/dotorg/sites/65/2019/05/mike-bloomberg-letter1-755x1024.jpg 755w" sizes="(max-width: 1000px) 100vw, 1000px" /></div>
+		</div> 
+	</div> </div></div></div><div class="wpb_column vc_column_container vc_col-sm-8"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element  vc_custom_1612812554032 large-text" >
+		<div class="wpb_wrapper">
+			<p>&#8220;Despite all that we faced in 2020, I’m more optimistic than ever about our ability to tackle the big challenges we face. To succeed, it’s imperative that we apply what we have learned during the pandemic.&#8221;</p>
+
+		</div>
+	</div>
+
+	<div class="wpb_text_column wpb_content_element  vc_custom_1612812566547" >
+		<div class="wpb_wrapper">
+			<h4>Michael R. Bloomberg</h4>
+<p><a href="https://annualreport.bloomberg.org/annual-letter/">Annual Letter on Philanthropy <i class="icon-arrow-right"></i></a></p>
+
+		</div>
+	</div>
+</div></div></div></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_empty_space"   style="height: 60px"><span class="vc_empty_space_inner"></span></div><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text" ><span class="vc_sep_holder vc_sep_holder_l"><span  style="border-color:#500778;" class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span  style="border-color:#500778;" class="vc_sep_line"></span></span>
+</div><div class="vc_empty_space"   style="height: 20px"><span class="vc_empty_space_inner"></span></div></div></div></div></div><div class="vc_row wpb_row vc_row-fluid reverse-columns-on-mobile"><div class="wpb_column vc_column_container vc_col-sm-8"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element  vc_custom_1612362905848 large-text" >
+		<div class="wpb_wrapper">
+			<p>&#8220;Despite the pandemic’s disruptions, Bloomberg Philanthropies&#8217; work has continued forward. It’s a real tribute to the expertise and experience of the entire Bloomberg team both at our foundation and the company, Bloomberg L.P.&#8221;</p>
+
+		</div>
+	</div>
+
+	<div class="wpb_text_column wpb_content_element  vc_custom_1612812576501" >
+		<div class="wpb_wrapper">
+			<h4>Patricia E. Harris</h4>
+<p><a href="https://annualreport.bloomberg.org/ceo-letter/">CEO Letter <i class="icon-arrow-right"></i></a></p>
+
+		</div>
+	</div>
+</div></div></div><div class="home-img-col-right wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class=" vc_align_center narrow overlay-image overlay-green">
+		<div class="wpb_wrapper">
+			<div class="vc_single_image-wrapper"><img width="899" height="1200" src="https://assets.bbhub.io/dotorg/sites/65/2021/02/15001_0152_R_resize_retouch_v2-1.jpg" class="vc_single_image-img attachment-full" alt="Patti Harris" srcset="https://assets.bbhub.io/dotorg/sites/65/2021/02/15001_0152_R_resize_retouch_v2-1.jpg 899w, https://assets.bbhub.io/dotorg/sites/65/2021/02/15001_0152_R_resize_retouch_v2-1-225x300.jpg 225w, https://assets.bbhub.io/dotorg/sites/65/2021/02/15001_0152_R_resize_retouch_v2-1-767x1024.jpg 767w, https://assets.bbhub.io/dotorg/sites/65/2021/02/15001_0152_R_resize_retouch_v2-1-768x1025.jpg 768w" sizes="(max-width: 899px) 100vw, 899px" /></div>
+		</div> 
+	</div> </div></div></div></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_empty_space"   style="height: 64px"><span class="vc_empty_space_inner"></span></div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div class="vc_row wpb_row vc_row-fluid ceros-map"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="ceros-container"
+    data-aspectRatio="1.4578587699317"
+    data-tablet-aspectRatio="1.4578587699317"
+    data-mobile-aspectRatio="0.57507987220447">
+    <iframe class="ceros-experience"
+        src="https://view.ceros.com/bloomberg-financial-products/map/p/1"
+        allow="fullscreen">
+    </iframe>
+</div></div></div></div></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_empty_space"   style="height: 64px"><span class="vc_empty_space_inner"></span></div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid home-facts"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element " >
+		<div class="wpb_wrapper">
+			<h2 style="text-align: center;">About Bloomberg Philanthropies</h2>
+<p>Encompassing all of Mike Bloomberg’s giving, Bloomberg Philanthropies includes his foundation, corporate, and personal philanthropy as well as Bloomberg Associates, a pro bono consultancy that works with mayors in cities around the world.</p>
+<p>Mike has committed the vast majority of the profits from Bloomberg L.P., the global financial technology, data, and media company that he founded in 1981, to support the work of Bloomberg Philanthropies.</p>
+
+		</div>
+	</div>
+</div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div class="vc_row wpb_row vc_row-fluid"><div class="home-fullwidth wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+<section class="bbg-carousel-element">
+
+	<div class="carousel-row">
+		<div class="carousel-column carousel-column--button hide-on-mobile">
+			<section class="bbg-controls" bbg-controls="carousel_1">
+				<button class="bbg-control previous" aria-controls="carousel_1" bbg-previous data-element="carousel-scroll" data-label="BackArrow">
+					Previous
+				</button>
+			</section>
+		</div>
+
+		<div class="carousel-column carousel-column--carousel">
+			<section id="carousel_1" class="bbg-carousel" bbg-carousel data-loop="true" data-animate="true">
+				<div class="bbg-carousel-wrapper">
+					<div class="bbg-carousel-slide">
+	
+	<div class=" vc_align_center copy-bg overlay-image overlay-green">
+		<div class="wpb_wrapper">
+			<div class="vc_single_image-wrapper"><img width="1600" height="1000" src="https://assets.bbhub.io/dotorg/sites/65/2021/02/ethiopia-ppe-training.jpg" class="vc_single_image-img attachment-full" alt="Personal protection equipment training in Ethiopia" srcset="https://assets.bbhub.io/dotorg/sites/65/2021/02/ethiopia-ppe-training.jpg 1600w, https://assets.bbhub.io/dotorg/sites/65/2021/02/ethiopia-ppe-training-300x188.jpg 300w, https://assets.bbhub.io/dotorg/sites/65/2021/02/ethiopia-ppe-training-1024x640.jpg 1024w, https://assets.bbhub.io/dotorg/sites/65/2021/02/ethiopia-ppe-training-768x480.jpg 768w, https://assets.bbhub.io/dotorg/sites/65/2021/02/ethiopia-ppe-training-1536x960.jpg 1536w" sizes="(max-width: 1600px) 100vw, 1600px" /></div><div class="caption" aria-hidden="true"><span>Personal protective equipment training in Ethiopia run by public health partner Vital Strategies. Credit: Tewodros Emiru/Resolve to Save Lives</span></div>
+		</div> 
+	</div> 
+</div>
+
+<div class="bbg-carousel-slide">
+	
+	<div class=" vc_align_center copy-bg overlay-image overlay-green">
+		<div class="wpb_wrapper">
+			<div class="vc_single_image-wrapper"><img width="1600" height="1000" src="https://assets.bbhub.io/dotorg/sites/65/2021/02/bp-harvard-local-response.jpg" class="vc_single_image-img attachment-full" alt="Bloomberg Harvard City Leadership Initiatives hosting its first COVID-19 response session" srcset="https://assets.bbhub.io/dotorg/sites/65/2021/02/bp-harvard-local-response.jpg 1600w, https://assets.bbhub.io/dotorg/sites/65/2021/02/bp-harvard-local-response-300x188.jpg 300w, https://assets.bbhub.io/dotorg/sites/65/2021/02/bp-harvard-local-response-1024x640.jpg 1024w, https://assets.bbhub.io/dotorg/sites/65/2021/02/bp-harvard-local-response-768x480.jpg 768w, https://assets.bbhub.io/dotorg/sites/65/2021/02/bp-harvard-local-response-1536x960.jpg 1536w" sizes="(max-width: 1600px) 100vw, 1600px" /></div><div class="caption" aria-hidden="true"><span>The Bloomberg Harvard City Leadership Initiative hosting its first COVID-19 response session for mayors and city leaders in March 2020. Credit: Bloomberg Harvard City Leadership Initiative</span></div>
+		</div> 
+	</div> 
+</div>
+
+<div class="bbg-carousel-slide">
+	
+	<div class=" vc_align_center copy-bg overlay-image overlay-green">
+		<div class="wpb_wrapper">
+			<div class="vc_single_image-wrapper"><img width="1600" height="1000" src="https://assets.bbhub.io/dotorg/sites/65/2021/02/cambridge-ma.jpg" class="vc_single_image-img attachment-full" alt="Harvard freshman, and CollegePoint Alumna, Penelope Alegria catches up on her work on the lawn in Harvard Yard" srcset="https://assets.bbhub.io/dotorg/sites/65/2021/02/cambridge-ma.jpg 1600w, https://assets.bbhub.io/dotorg/sites/65/2021/02/cambridge-ma-300x188.jpg 300w, https://assets.bbhub.io/dotorg/sites/65/2021/02/cambridge-ma-1024x640.jpg 1024w, https://assets.bbhub.io/dotorg/sites/65/2021/02/cambridge-ma-768x480.jpg 768w, https://assets.bbhub.io/dotorg/sites/65/2021/02/cambridge-ma-1536x960.jpg 1536w" sizes="(max-width: 1600px) 100vw, 1600px" /></div><div class="caption" aria-hidden="true"><span>Harvard freshman, and CollegePoint Alumna, Penelope Alegria catches up on her work on the lawn in Harvard Yard, Boston.</span></div>
+		</div> 
+	</div> 
+</div>
+
+<div class="bbg-carousel-slide">
+	
+	<div class=" vc_align_center copy-bg overlay-image overlay-green">
+		<div class="wpb_wrapper">
+			<div class="vc_single_image-wrapper"><img width="1600" height="1000" src="https://assets.bbhub.io/dotorg/sites/65/2021/02/pacwtc.jpg" class="vc_single_image-img attachment-full" alt="A rendering of the Perelman Performing Arts Center" srcset="https://assets.bbhub.io/dotorg/sites/65/2021/02/pacwtc.jpg 1600w, https://assets.bbhub.io/dotorg/sites/65/2021/02/pacwtc-300x188.jpg 300w, https://assets.bbhub.io/dotorg/sites/65/2021/02/pacwtc-1024x640.jpg 1024w, https://assets.bbhub.io/dotorg/sites/65/2021/02/pacwtc-768x480.jpg 768w, https://assets.bbhub.io/dotorg/sites/65/2021/02/pacwtc-1536x960.jpg 1536w" sizes="(max-width: 1600px) 100vw, 1600px" /></div><div class="caption" aria-hidden="true"><span>A rendering of the Perelman Performing Arts Center, New York. Credit: Luxigon/The Ronald O. Perelman Performing Arts Center</span></div>
+		</div> 
+	</div> 
+</div>
+
+<div class="bbg-carousel-slide">
+	
+	<div class=" vc_align_center copy-bg overlay-image overlay-green">
+		<div class="wpb_wrapper">
+			<div class="vc_single_image-wrapper"><img width="1600" height="1000" src="https://assets.bbhub.io/dotorg/sites/65/2021/02/jhu.jpg" class="vc_single_image-img attachment-full" alt="Research Technologist Kirsten Littlefield conducts research in the lab" srcset="https://assets.bbhub.io/dotorg/sites/65/2021/02/jhu.jpg 1600w, https://assets.bbhub.io/dotorg/sites/65/2021/02/jhu-300x188.jpg 300w, https://assets.bbhub.io/dotorg/sites/65/2021/02/jhu-1024x640.jpg 1024w, https://assets.bbhub.io/dotorg/sites/65/2021/02/jhu-768x480.jpg 768w, https://assets.bbhub.io/dotorg/sites/65/2021/02/jhu-1536x960.jpg 1536w" sizes="(max-width: 1600px) 100vw, 1600px" /></div><div class="caption" aria-hidden="true"><span>Research Technologist Kirsten Littlefield conducts convalescent plasma research in the lab of Dr. Andy Pekosz at the Bloomberg School of Public Health. Credit: Will Kirk/Johns Hopkins University</span></div>
+		</div> 
+	</div> 
+</div>
+
+<div class="bbg-carousel-slide">
+	
+	<div class=" vc_align_center copy-bg overlay-image overlay-green">
+		<div class="wpb_wrapper">
+			<div class="vc_single_image-wrapper"><img width="1600" height="1000" src="https://assets.bbhub.io/dotorg/sites/65/2021/02/saginaw.jpg" class="vc_single_image-img attachment-full" alt="A man paints at the intersection of Ezra Rust Avenue and Fordney Street during the Great Mural Project Asphalt Mural Paint-A-Thon on Sept. 26, 2020 in Saginaw, Michigan." srcset="https://assets.bbhub.io/dotorg/sites/65/2021/02/saginaw.jpg 1600w, https://assets.bbhub.io/dotorg/sites/65/2021/02/saginaw-300x188.jpg 300w, https://assets.bbhub.io/dotorg/sites/65/2021/02/saginaw-1024x640.jpg 1024w, https://assets.bbhub.io/dotorg/sites/65/2021/02/saginaw-768x480.jpg 768w, https://assets.bbhub.io/dotorg/sites/65/2021/02/saginaw-1536x960.jpg 1536w" sizes="(max-width: 1600px) 100vw, 1600px" /></div><div class="caption" aria-hidden="true"><span>As part of the Asphalt Art Initiative, a man paints an intersection during the Great Mural Project Paint-A-Thon in Saginaw, Michigan.</span></div>
+		</div> 
+	</div> 
+</div>
+
+<div class="bbg-carousel-slide">
+	
+	<div class=" vc_align_center copy-bg overlay-image overlay-green">
+		<div class="wpb_wrapper">
+			<div class="vc_single_image-wrapper"><img width="1600" height="1000" src="https://assets.bbhub.io/dotorg/sites/65/2021/02/wck-bp.jpg" class="vc_single_image-img attachment-full" alt="World Central Kitchen and Bloomberg Philanthropies have teamed up to feed hospital staff at Kings County Hospital in Brooklyn" srcset="https://assets.bbhub.io/dotorg/sites/65/2021/02/wck-bp.jpg 1600w, https://assets.bbhub.io/dotorg/sites/65/2021/02/wck-bp-300x188.jpg 300w, https://assets.bbhub.io/dotorg/sites/65/2021/02/wck-bp-1024x640.jpg 1024w, https://assets.bbhub.io/dotorg/sites/65/2021/02/wck-bp-768x480.jpg 768w, https://assets.bbhub.io/dotorg/sites/65/2021/02/wck-bp-1536x960.jpg 1536w" sizes="(max-width: 1600px) 100vw, 1600px" /></div><div class="caption" aria-hidden="true"><span>World Central Kitchen and Bloomberg Philanthropies teamed up to feed over over one million meals to 30,000 NYC Health + Hospitals employees, including at Kings County Hospital in Brooklyn.</span></div>
+		</div> 
+	</div> 
+</div>
+
+<div class="bbg-carousel-slide">
+	
+	<div class=" vc_align_center copy-bg overlay-image overlay-green">
+		<div class="wpb_wrapper">
+			<div class="vc_single_image-wrapper"><img width="1600" height="1000" src="https://assets.bbhub.io/dotorg/sites/65/2021/02/fresh-air-funds.jpg" class="vc_single_image-img attachment-full" alt="Kids safely playing at the Fresh Air Funds site in Jackson Heights, New York." srcset="https://assets.bbhub.io/dotorg/sites/65/2021/02/fresh-air-funds.jpg 1600w, https://assets.bbhub.io/dotorg/sites/65/2021/02/fresh-air-funds-300x188.jpg 300w, https://assets.bbhub.io/dotorg/sites/65/2021/02/fresh-air-funds-1024x640.jpg 1024w, https://assets.bbhub.io/dotorg/sites/65/2021/02/fresh-air-funds-768x480.jpg 768w, https://assets.bbhub.io/dotorg/sites/65/2021/02/fresh-air-funds-1536x960.jpg 1536w" sizes="(max-width: 1600px) 100vw, 1600px" /></div><div class="caption" aria-hidden="true"><span>Kids safely playing at a Fresh Air Fund Summer Spaces site in Jackson Heights, New York during the summer of 2020.</span></div>
+		</div> 
+	</div> 
+</div>
+
+<div class="bbg-carousel-slide">
+	
+	<div class=" vc_align_center copy-bg overlay-image overlay-green">
+		<div class="wpb_wrapper">
+			<div class="vc_single_image-wrapper"><img width="1600" height="1000" src="https://assets.bbhub.io/dotorg/sites/65/2021/02/bconnects.jpg" class="vc_single_image-img attachment-full" alt="Bloomberg Connect apps being used at the Drawing Center, New York." srcset="https://assets.bbhub.io/dotorg/sites/65/2021/02/bconnects.jpg 1600w, https://assets.bbhub.io/dotorg/sites/65/2021/02/bconnects-300x188.jpg 300w, https://assets.bbhub.io/dotorg/sites/65/2021/02/bconnects-1024x640.jpg 1024w, https://assets.bbhub.io/dotorg/sites/65/2021/02/bconnects-768x480.jpg 768w, https://assets.bbhub.io/dotorg/sites/65/2021/02/bconnects-1536x960.jpg 1536w" sizes="(max-width: 1600px) 100vw, 1600px" /></div><div class="caption" aria-hidden="true"><span>Bloomberg Connects app being used at The Drawing Center, New York.</span></div>
+		</div> 
+	</div> 
+</div>
+
+<div class="bbg-carousel-slide">
+	
+	<div class=" vc_align_center copy-bg overlay-image overlay-green">
+		<div class="wpb_wrapper">
+			<div class="vc_single_image-wrapper"><img width="1600" height="1000" src="https://assets.bbhub.io/dotorg/sites/65/2021/02/protecting-our-oceans.jpg" class="vc_single_image-img attachment-full" alt="Clownfish in anemone - photo credit: The Ocean Agency" srcset="https://assets.bbhub.io/dotorg/sites/65/2021/02/protecting-our-oceans.jpg 1600w, https://assets.bbhub.io/dotorg/sites/65/2021/02/protecting-our-oceans-300x188.jpg 300w, https://assets.bbhub.io/dotorg/sites/65/2021/02/protecting-our-oceans-1024x640.jpg 1024w, https://assets.bbhub.io/dotorg/sites/65/2021/02/protecting-our-oceans-768x480.jpg 768w, https://assets.bbhub.io/dotorg/sites/65/2021/02/protecting-our-oceans-1536x960.jpg 1536w" sizes="(max-width: 1600px) 100vw, 1600px" /></div><div class="caption" aria-hidden="true"><span>The Vibrant Oceans Initiative advocates for policy changes to protect reefs and fisheries. Credit: The Ocean Agency</span></div>
+		</div> 
+	</div> 
+</div>
+
+<div class="bbg-carousel-slide">
+	
+	<div class=" vc_align_center copy-bg overlay-image overlay-green">
+		<div class="wpb_wrapper">
+			<div class="vc_single_image-wrapper"><img width="1600" height="1000" src="https://assets.bbhub.io/dotorg/sites/65/2021/02/hbms3.jpg" class="vc_single_image-img attachment-full" alt="Amid COVID-19 pandemic, Bloomberg Philanthropies commits $100 million to help increase number of black doctors in U.S." srcset="https://assets.bbhub.io/dotorg/sites/65/2021/02/hbms3.jpg 1600w, https://assets.bbhub.io/dotorg/sites/65/2021/02/hbms3-300x188.jpg 300w, https://assets.bbhub.io/dotorg/sites/65/2021/02/hbms3-1024x640.jpg 1024w, https://assets.bbhub.io/dotorg/sites/65/2021/02/hbms3-768x480.jpg 768w, https://assets.bbhub.io/dotorg/sites/65/2021/02/hbms3-1536x960.jpg 1536w" sizes="(max-width: 1600px) 100vw, 1600px" /></div><div class="caption" aria-hidden="true"><span>Amid the COVID-19 pandemic, Bloomberg Philanthropies committed $100 million to ease the debt burden of students at four historically Black medical schools and help increase number of black doctors in the U.S.</span></div>
+		</div> 
+	</div> 
+</div>
+
+<div class="bbg-carousel-slide">
+	
+	<div class=" vc_align_center copy-bg overlay-image overlay-green">
+		<div class="wpb_wrapper">
+			<div class="vc_single_image-wrapper"><img width="1600" height="1000" src="https://assets.bbhub.io/dotorg/sites/65/2021/02/apac-bob-challenge.jpg" class="vc_single_image-img attachment-full" alt="A Hong Kong Bloomberg L.P. employee participates in a packaging toiletries and household cleaning products to be delivered to essential workers." srcset="https://assets.bbhub.io/dotorg/sites/65/2021/02/apac-bob-challenge.jpg 1600w, https://assets.bbhub.io/dotorg/sites/65/2021/02/apac-bob-challenge-300x188.jpg 300w, https://assets.bbhub.io/dotorg/sites/65/2021/02/apac-bob-challenge-1024x640.jpg 1024w, https://assets.bbhub.io/dotorg/sites/65/2021/02/apac-bob-challenge-768x480.jpg 768w, https://assets.bbhub.io/dotorg/sites/65/2021/02/apac-bob-challenge-1536x960.jpg 1536w" sizes="(max-width: 1600px) 100vw, 1600px" /></div><div class="caption" aria-hidden="true"><span>A Hong Kong Bloomberg L.P. employee participates in packaging toiletries and household cleaning products to be delivered to essential workers.</span></div>
+		</div> 
+	</div> 
+</div>
+
+<div class="bbg-carousel-slide">
+	
+	<div class=" vc_align_center copy-bg overlay-image overlay-green">
+		<div class="wpb_wrapper">
+			<div class="vc_single_image-wrapper"><img width="1600" height="1000" src="https://assets.bbhub.io/dotorg/sites/65/2021/02/fthhlr.jpg" class="vc_single_image-img attachment-full" alt="During the COVID-19 pandemic Bloomberg stepped up support for the arts in London though the London Community Response Fund, like at The Old Vic. photo credit: Manuel Harlan" srcset="https://assets.bbhub.io/dotorg/sites/65/2021/02/fthhlr.jpg 1600w, https://assets.bbhub.io/dotorg/sites/65/2021/02/fthhlr-300x188.jpg 300w, https://assets.bbhub.io/dotorg/sites/65/2021/02/fthhlr-1024x640.jpg 1024w, https://assets.bbhub.io/dotorg/sites/65/2021/02/fthhlr-768x480.jpg 768w, https://assets.bbhub.io/dotorg/sites/65/2021/02/fthhlr-1536x960.jpg 1536w" sizes="(max-width: 1600px) 100vw, 1600px" /></div><div class="caption" aria-hidden="true"><span>During the COVID-19 pandemic, Bloomberg stepped up support for the arts in London through the London Community Response Fund at organizations like The Old Vic. Credit: Manuel Harlan</span></div>
+		</div> 
+	</div> 
+</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="carousel-column carousel-column--button hide-on-mobile">
+			<section class="bbg-controls" bbg-controls="carousel_1">
+				<button class="bbg-control next" aria-controls="carousel_1" bbg-next data-element="carousel-scroll" data-label="NextArrow">
+					Next
+				</button>
+			</section>
+		</div>
+	</div>
+
+	<div class="carousel-row">
+		<div class="carousel-column carousel-column--button show-on-mobile">
+			<section class="bbg-controls" bbg-controls="carousel_1">
+				<button class="bbg-control previous" aria-controls="carousel_1" bbg-previous data-element="carousel-scroll" data-label="BackArrow">
+					Previous
+				</button>
+			</section>
+		</div>
+		<div class="carousel-column carousel-column--pagination">
+			<section class="bbg-carousel-pagination" bbg-pagination="carousel_1"></section>
+		</div>
+		<div class="carousel-column carousel-column--button show-on-mobile">
+			<section class="bbg-controls" bbg-controls="carousel_1">
+				<button class="bbg-control next" aria-controls="carousel_1" bbg-next data-element="carousel-scroll" data-label="NextArrow">
+					Next
+				</button>
+			</section>
+		</div>
+	</div>
+
+</section>
+</div></div></div></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_empty_space"   style="height: 50px"><span class="vc_empty_space_inner"></span></div></div></div></div></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element " >
+		<div class="wpb_wrapper">
+			<p>Bloomberg Philanthropies works to improve the lives of millions of people in 810 cities and 170 countries. In 2020, Bloomberg Philanthropies invested $1.6 billion around the world. Over his lifetime, Mike Bloomberg has so far given $11.1 billion to philanthropy.</p>
+
+		</div>
+	</div>
+</div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_empty_space"   style="height: 50px"><span class="vc_empty_space_inner"></span></div></div></div></div></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element " >
+		<div class="wpb_wrapper">
+			<p style="text-align: center;"><a href="https://annualreport.bloomberg.org/homepage-media/">About the opening video</a></p>
+
+		</div>
+	</div>
+</div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_empty_space"   style="height: 50px"><span class="vc_empty_space_inner"></span></div></div></div></div></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_80 vc_sep_pos_align_center vc_separator_no_text" ><span class="vc_sep_holder vc_sep_holder_l"><span  style="border-color:#500778;" class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span  style="border-color:#500778;" class="vc_sep_line"></span></span>
+</div></div></div></div></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_empty_space"   style="height: 60px"><span class="vc_empty_space_inner"></span></div></div></div></div></div>
+				</div>
+						</main>
+		</div>
+		<footer>
+
+						<div class="sticky">
+				<div class="container">
+					<ul id="footer_navigation" class="nav footer-nav"><li id="menu-item-4615" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4615 purple"><a href="https://annualreport.bloomberg.org/covid-19-response/" data-element="menu-footer" data-description="COVID-19 Response">COVID-19 Response</a></li>
+<li id="menu-item-3099" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3099 pink"><a href="https://annualreport.bloomberg.org/arts/" data-element="menu-footer" data-description="Arts">Arts</a></li>
+<li id="menu-item-3094" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3094 green"><a href="https://annualreport.bloomberg.org/environment/" data-element="menu-footer" data-description="Environment">Environment</a></li>
+<li id="menu-item-3093" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3093 darkblue"><a href="https://annualreport.bloomberg.org/education/" data-element="menu-footer" data-description="Education">Education</a></li>
+<li id="menu-item-3098" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3098 blue"><a href="https://annualreport.bloomberg.org/public-health/" data-element="menu-footer" data-description="Public Health">Public Health</a></li>
+<li id="menu-item-3096" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3096"><a href="https://annualreport.bloomberg.org/government/" data-element="menu-footer" data-description="Government Innovation">Government Innovation</a></li>
+<li id="menu-item-3091" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3091 orange"><a href="https://annualreport.bloomberg.org/bloomberg-associates/" data-element="menu-footer" data-description="Bloomberg Associates">Bloomberg Associates</a></li>
+<li id="menu-item-3095" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3095 pinkpurple"><a href="https://annualreport.bloomberg.org/founders-projects/" data-element="menu-footer" data-description="Founder’s Projects">Founder’s Projects</a></li>
+<li id="menu-item-3092" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3092 purple"><a href="https://annualreport.bloomberg.org/bloomberg-lp/" data-element="menu-footer" data-description="Bloomberg L.P.">Bloomberg L.P.</a></li>
+</ul>				</div>
+			</div>
+			
+			<div class="container copyright">
+
+				<ul id="footer-copyright" class="nav footer-copyright"><li>&copy; 2022 Bloomberg IP Holdings LLC. All rights reserved.</li><li id="menu-item-391" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-391"><a href="https://www.bloomberg.com/company">Bloomberg L.P.</a></li>
+<li id="menu-item-2304" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2304"><a href="https://www.bloomberg.org/about/">Board of Directors</a></li>
+<li id="menu-item-393" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-393"><a href="http://www.bloomberg.org/legal/">Terms of Use</a></li>
+<li id="menu-item-395" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-395"><a href="http://www.bloomberg.org/privacy/">Privacy</a></li>
+</ul><ul class='social-links'><li class='social-links__item'><a class='social-links__link social-links__link--twitter' target='_blank' rel='noopener' href='https://twitter.com/bloombergdotorg' data-element='social-follow' data-description='Twitter'>Twitter</a></li><li class='social-links__item'><a class='social-links__link social-links__link--facebook' target='_blank' rel='noopener' href='https://www.facebook.com/bloombergdotorg' data-element='social-follow' data-description='Facebook'>Facebook</a></li><li class='social-links__item'><a class='social-links__link social-links__link--instagram' target='_blank' rel='noopener' href='https://www.instagram.com/bloombergdotorg/' data-element='social-follow' data-description='Instagram'>Instagram</a></li><li class='social-links__item'><a class='social-links__link social-links__link--flickr' target='_blank' rel='noopener' href='https://www.flickr.com/photos/bloombergphilanthropies' data-element='social-follow' data-description='Flickr'>Flickr</a></li><li class='social-links__item'><a class='social-links__link social-links__link--contact' target='_blank' rel='noopener' href='https://www.bloomberg.org/about/contact-us/' data-element='social-follow' data-description='Contact'>Contact</a></li></ul>			</div>
+		</footer>
+
+		
+			<div class="slidebox">
+				<div class="slides">
+
+				
+					
+					<div class="slide active slide1" data-video="" data-index="1">
+
+						<div class="slidebox__sidebar">
+							<img class="slidebox__sidebar-logo" src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/dayaroundworld.svg">
+
+							<div class="slidebox__sidebar-location">
+								<img class="map" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/5am-almofala-brazil.png ">
+								<div class="time">
+									<span>05:00 AM</span>
+									<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/moon.svg">
+								</div>
+							</div>
+							<img class="slidebox__sidebar-mobile-image" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/BV_8686-1024x682.jpg">
+							<div class="slidebox__sidebar-title">Almofala, Brazil</div>
+							<div class="slidebox__sidebar-description">The sun rises off the Brazilian coast and a new day begins for fishermen supported by Vibrant Oceans, a sustainable fishing initiative.
+Credit: Bento Viana Photography</div>
+							<div class="slidebox__sidebar-description-mobile">The sun rises off the Brazilian coast and a new day begins for fishermen supported by Vibrant Oceans, a sustainable fishing initiative.
+Credit: Bento Viana Photography</div>
+						</div>
+
+						<div class="slidebox__share">
+
+							<ul>
+								<li class="slidebox__share-email">
+									<a href="mailto:?subject=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day.&amp;body=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day. Check Out: http://bloombg.org/2qketg4	"><span>email</span></a>
+								</li>
+								<li class="slidebox__share-facebook">
+									<a href="http://www.facebook.com/share.php?u=http://bloombg.org/2qketg4	&amp;title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day.&amp;picture=https://assets.bbhub.io/dotorg/sites/65/2017/05/aroundtheworld_share_v3.jpg" target="_blank"><span>facebook</span></a>
+								</li>
+								<li class="slidebox__share-twitter">
+									<a href="https://twitter.com/intent/tweet?url=http://bloombg.org/2qketg4	&amp;text=See+where+%40BloombergDotOrg+is+working+around+the+world+at+any+given+moment+in+a+day.+pic.twitter.com%2F59e1vfjTsD&amp;" target="_blank"><span>twitter</span></a>
+
+								</li>
+								<li class="slidebox__share-linkedin">
+									<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://bloombg.org/2qketg4	&title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day."
+									   target="_blank"><span>linkedin</span></a>
+								</li>
+							</ul>
+
+							<div class="slidebox__share-trigger js-slidebox__share">
+								<span>SHARE</span>
+								<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/share.svg">
+							</div>
+
+						</div>
+
+					</div>
+
+				
+					
+					<div class="slide  slide2" data-video="https://player.vimeo.com/external/218191081.hd.mp4?s=b5325ccce51032b125a98f8eb86f7d96b81e6b69&profile_id=119" data-index="2">
+
+						<div class="slidebox__sidebar">
+							<img class="slidebox__sidebar-logo" src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/dayaroundworld.svg">
+
+							<div class="slidebox__sidebar-location">
+								<img class="map" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/6am-kigali-rwanda.png ">
+								<div class="time">
+									<span>06:00 AM</span>
+									<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/sun.svg">
+								</div>
+							</div>
+							<img class="slidebox__sidebar-mobile-image" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/Womens-Economic-Dev-Rwanda-Coffee-1024x682.jpg">
+							<div class="slidebox__sidebar-title">Kigali, Rwanda</div>
+							<div class="slidebox__sidebar-description">At Question Coffee Cafe, women trained by partners of the Women Economic Development program begin roasting and brewing coffee grown by their fellow female entrepreneurs. Credit: Relationship Coffee Institute 
+</div>
+							<div class="slidebox__sidebar-description-mobile">People around the world begin their day with coffee grown and roasted by women trained by partners of the Women Economic Development program. 
+Credit: Clay Enos</div>
+						</div>
+
+						<div class="slidebox__share">
+
+							<ul>
+								<li class="slidebox__share-email">
+									<a href="mailto:?subject=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day.&amp;body=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day. Check Out: http://bloombg.org/2qketg4"><span>email</span></a>
+								</li>
+								<li class="slidebox__share-facebook">
+									<a href="http://www.facebook.com/share.php?u=http://bloombg.org/2qketg4&amp;title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day.&amp;picture=https://assets.bbhub.io/dotorg/sites/65/2017/05/aroundtheworld_share_v3.jpg" target="_blank"><span>facebook</span></a>
+								</li>
+								<li class="slidebox__share-twitter">
+									<a href="https://twitter.com/intent/tweet?url=http://bloombg.org/2qketg4&amp;text=See+where+%40BloombergDotOrg+is+working+around+the+world+at+any+given+moment+in+a+day.+pic.twitter.com%2F59e1vfjTsD&amp;" target="_blank"><span>twitter</span></a>
+
+								</li>
+								<li class="slidebox__share-linkedin">
+									<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://bloombg.org/2qketg4&title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day."
+									   target="_blank"><span>linkedin</span></a>
+								</li>
+							</ul>
+
+							<div class="slidebox__share-trigger js-slidebox__share">
+								<span>SHARE</span>
+								<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/share.svg">
+							</div>
+
+						</div>
+
+					</div>
+
+				
+					
+					<div class="slide  slide3" data-video="" data-index="3">
+
+						<div class="slidebox__sidebar">
+							<img class="slidebox__sidebar-logo" src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/dayaroundworld.svg">
+
+							<div class="slidebox__sidebar-location">
+								<img class="map" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/7am-san-jose-US.png ">
+								<div class="time">
+									<span>07:00 AM</span>
+									<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/sun.svg">
+								</div>
+							</div>
+							<img class="slidebox__sidebar-mobile-image" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/San-Jose-i-teams-project-1024x681.jpg">
+							<div class="slidebox__sidebar-title">San Jose, U.S.A.</div>
+							<div class="slidebox__sidebar-description">Sanitation workers begin their routes, collecting trash that would have been illegally dumped if not for support from What Works Cities—a program that helps cities use data to improve government services. Credit: San Jose Environmental Services Department</div>
+							<div class="slidebox__sidebar-description-mobile">Sanitation workers begin their routes, collecting trash that would have been illegally dumped if not for support from What Works Cities—a program that helps cities use data to improve government services.</div>
+						</div>
+
+						<div class="slidebox__share">
+
+							<ul>
+								<li class="slidebox__share-email">
+									<a href="mailto:?subject=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day.&amp;body=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day. Check Out: http://bloombg.org/2qketg4	"><span>email</span></a>
+								</li>
+								<li class="slidebox__share-facebook">
+									<a href="http://www.facebook.com/share.php?u=http://bloombg.org/2qketg4	&amp;title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day.&amp;picture=https://assets.bbhub.io/dotorg/sites/65/2017/05/aroundtheworld_share_v3.jpg" target="_blank"><span>facebook</span></a>
+								</li>
+								<li class="slidebox__share-twitter">
+									<a href="https://twitter.com/intent/tweet?url=http://bloombg.org/2qketg4	&amp;text=See+where+%40BloombergDotOrg+is+working+around+the+world+at+any+given+moment+in+a+day.+pic.twitter.com%2F59e1vfjTsD&amp;" target="_blank"><span>twitter</span></a>
+
+								</li>
+								<li class="slidebox__share-linkedin">
+									<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://bloombg.org/2qketg4	&title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day."
+									   target="_blank"><span>linkedin</span></a>
+								</li>
+							</ul>
+
+							<div class="slidebox__share-trigger js-slidebox__share">
+								<span>SHARE</span>
+								<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/share.svg">
+							</div>
+
+						</div>
+
+					</div>
+
+				
+					
+					<div class="slide  slide4" data-video="https://player.vimeo.com/external/218191105.hd.mp4?s=2a7d23795d6a034662ff377ae9594ab29b4b5c63&profile_id=119" data-index="4">
+
+						<div class="slidebox__sidebar">
+							<img class="slidebox__sidebar-logo" src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/dayaroundworld.svg">
+
+							<div class="slidebox__sidebar-location">
+								<img class="map" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/8am-matlab-bangladesh.png ">
+								<div class="time">
+									<span>08:00 AM</span>
+									<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/sun.svg">
+								</div>
+							</div>
+							<img class="slidebox__sidebar-mobile-image" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/Bangladesh-Daycare-Program-1024x682.jpg">
+							<div class="slidebox__sidebar-title">Matlab, Bangladesh</div>
+							<div class="slidebox__sidebar-description">Children play at their new community daycares, part of a Bloomberg-supported Johns Hopkins University study to prevent drownings.</div>
+							<div class="slidebox__sidebar-description-mobile">Children play at their new community daycares, part of a Bloomberg-supported Johns Hopkins University study to prevent drownings.</div>
+						</div>
+
+						<div class="slidebox__share">
+
+							<ul>
+								<li class="slidebox__share-email">
+									<a href="mailto:?subject=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day.&amp;body=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day. Check Out: http://bloombg.org/2qketg4	"><span>email</span></a>
+								</li>
+								<li class="slidebox__share-facebook">
+									<a href="http://www.facebook.com/share.php?u=http://bloombg.org/2qketg4	&amp;title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day.&amp;picture=https://assets.bbhub.io/dotorg/sites/65/2017/05/aroundtheworld_share_v3.jpg" target="_blank"><span>facebook</span></a>
+								</li>
+								<li class="slidebox__share-twitter">
+									<a href="https://twitter.com/intent/tweet?url=http://bloombg.org/2qketg4	&amp;text=See+where+%40BloombergDotOrg+is+working+around+the+world+at+any+given+moment+in+a+day.+pic.twitter.com%2F59e1vfjTsD&amp;" target="_blank"><span>twitter</span></a>
+
+								</li>
+								<li class="slidebox__share-linkedin">
+									<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://bloombg.org/2qketg4	&title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day."
+									   target="_blank"><span>linkedin</span></a>
+								</li>
+							</ul>
+
+							<div class="slidebox__share-trigger js-slidebox__share">
+								<span>SHARE</span>
+								<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/share.svg">
+							</div>
+
+						</div>
+
+					</div>
+
+				
+					
+					<div class="slide  slide5" data-video="" data-index="5">
+
+						<div class="slidebox__sidebar">
+							<img class="slidebox__sidebar-logo" src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/dayaroundworld.svg">
+
+							<div class="slidebox__sidebar-location">
+								<img class="map" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/9am-kigoma-tanzania.png ">
+								<div class="time">
+									<span>09:00 AM</span>
+									<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/sun.svg">
+								</div>
+							</div>
+							<img class="slidebox__sidebar-mobile-image" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/9AM_TANZANIA-1024x692.jpg">
+							<div class="slidebox__sidebar-title">Kigoma Region, Tanzania</div>
+							<div class="slidebox__sidebar-description">Mothers arrive seeking care provided by local medical professionals, ready to help women and children across the country thanks to the support of the Maternal Health program.</div>
+							<div class="slidebox__sidebar-description-mobile">Mothers arrive seeking care provided by local medical professionals, ready to help women and children across the country thanks to the support of the Maternal Health program.</div>
+						</div>
+
+						<div class="slidebox__share">
+
+							<ul>
+								<li class="slidebox__share-email">
+									<a href="mailto:?subject=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day.&amp;body=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day. Check Out: http://bloombg.org/2qketg4"><span>email</span></a>
+								</li>
+								<li class="slidebox__share-facebook">
+									<a href="http://www.facebook.com/share.php?u=http://bloombg.org/2qketg4&amp;title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day.&amp;picture=https://assets.bbhub.io/dotorg/sites/65/2017/05/aroundtheworld_share_v3.jpg" target="_blank"><span>facebook</span></a>
+								</li>
+								<li class="slidebox__share-twitter">
+									<a href="https://twitter.com/intent/tweet?url=http://bloombg.org/2qketg4&amp;text=See+where+%40BloombergDotOrg+is+working+around+the+world+at+any+given+moment+in+a+day.+pic.twitter.com%2F59e1vfjTsD&amp;" target="_blank"><span>twitter</span></a>
+
+								</li>
+								<li class="slidebox__share-linkedin">
+									<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://bloombg.org/2qketg4&title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day."
+									   target="_blank"><span>linkedin</span></a>
+								</li>
+							</ul>
+
+							<div class="slidebox__share-trigger js-slidebox__share">
+								<span>SHARE</span>
+								<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/share.svg">
+							</div>
+
+						</div>
+
+					</div>
+
+				
+					
+					<div class="slide  slide6" data-video="https://player.vimeo.com/external/218191114.hd.mp4?s=e8adb58a36fe88afd92f5f3bb4a3764415c8d26d&profile_id=119" data-index="6">
+
+						<div class="slidebox__sidebar">
+							<img class="slidebox__sidebar-logo" src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/dayaroundworld.svg">
+
+							<div class="slidebox__sidebar-location">
+								<img class="map" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/10am-landsberg-germany.png ">
+								<div class="time">
+									<span>10:00 AM</span>
+									<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/sun.svg">
+								</div>
+							</div>
+							<img class="slidebox__sidebar-mobile-image" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/10AM_GERMANY-1024x692.jpg">
+							<div class="slidebox__sidebar-title">Landsberg, Germany</div>
+							<div class="slidebox__sidebar-description">Here at this state of the art crash-test facility, vehicles from around the world are tested to ensure that they are held to the same standard. This partner facility is part of the Global Road Safety Initiative’s work to save lives.</div>
+							<div class="slidebox__sidebar-description-mobile">Here at this state of the art crash-test facility, vehicles from around the world are tested to ensure that they are held to the same standard. This partner facility is part of the Global Road Safety Initiative’s work to save lives.</div>
+						</div>
+
+						<div class="slidebox__share">
+
+							<ul>
+								<li class="slidebox__share-email">
+									<a href="mailto:?subject=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day.&amp;body=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day. Check Out: http://bloombg.org/2qketg4	"><span>email</span></a>
+								</li>
+								<li class="slidebox__share-facebook">
+									<a href="http://www.facebook.com/share.php?u=http://bloombg.org/2qketg4	&amp;title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day.&amp;picture=https://assets.bbhub.io/dotorg/sites/65/2017/05/aroundtheworld_share_v3.jpg" target="_blank"><span>facebook</span></a>
+								</li>
+								<li class="slidebox__share-twitter">
+									<a href="https://twitter.com/intent/tweet?url=http://bloombg.org/2qketg4	&amp;text=See+where+%40BloombergDotOrg+is+working+around+the+world+at+any+given+moment+in+a+day.+pic.twitter.com%2F59e1vfjTsD&amp;" target="_blank"><span>twitter</span></a>
+
+								</li>
+								<li class="slidebox__share-linkedin">
+									<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://bloombg.org/2qketg4	&title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day."
+									   target="_blank"><span>linkedin</span></a>
+								</li>
+							</ul>
+
+							<div class="slidebox__share-trigger js-slidebox__share">
+								<span>SHARE</span>
+								<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/share.svg">
+							</div>
+
+						</div>
+
+					</div>
+
+				
+					
+					<div class="slide  slide7" data-video="" data-index="7">
+
+						<div class="slidebox__sidebar">
+							<img class="slidebox__sidebar-logo" src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/dayaroundworld.svg">
+
+							<div class="slidebox__sidebar-location">
+								<img class="map" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/11am-dallas-US.png ">
+								<div class="time">
+									<span>11:00 AM</span>
+									<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/sun.svg">
+								</div>
+							</div>
+							<img class="slidebox__sidebar-mobile-image" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/11AM_USA-1024x692.jpg">
+							<div class="slidebox__sidebar-title">Dallas, U.S.A.</div>
+							<div class="slidebox__sidebar-description">The Dallas Black Dance Theatre, like 260 other cultural organizations across U.S. cities, is able to thrive with support from the Art Innovation Management program. 
+
+Credit: The Dallas Dance Project/The Dallas Black Dance Theatre</div>
+							<div class="slidebox__sidebar-description-mobile">The Dallas Black Dance Theatre, like 260 other cultural organizations across U.S. cities, is able to thrive with support from the Art Innovation Management program.
+Credit: The Dallas Dance Project   </div>
+						</div>
+
+						<div class="slidebox__share">
+
+							<ul>
+								<li class="slidebox__share-email">
+									<a href="mailto:?subject=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day.&amp;body=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day. Check Out: http://bloombg.org/2qketg4"><span>email</span></a>
+								</li>
+								<li class="slidebox__share-facebook">
+									<a href="http://www.facebook.com/share.php?u=http://bloombg.org/2qketg4&amp;title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day.&amp;picture=https://assets.bbhub.io/dotorg/sites/65/2017/05/aroundtheworld_share_v3.jpg" target="_blank"><span>facebook</span></a>
+								</li>
+								<li class="slidebox__share-twitter">
+									<a href="https://twitter.com/intent/tweet?url=http://bloombg.org/2qketg4&amp;text=See+where+%40BloombergDotOrg+is+working+around+the+world+at+any+given+moment+in+a+day.+pic.twitter.com%2F59e1vfjTsD&amp;" target="_blank"><span>twitter</span></a>
+
+								</li>
+								<li class="slidebox__share-linkedin">
+									<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://bloombg.org/2qketg4&title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day."
+									   target="_blank"><span>linkedin</span></a>
+								</li>
+							</ul>
+
+							<div class="slidebox__share-trigger js-slidebox__share">
+								<span>SHARE</span>
+								<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/share.svg">
+							</div>
+
+						</div>
+
+					</div>
+
+				
+					
+					<div class="slide  slide8" data-video="https://player.vimeo.com/external/218191127.hd.mp4?s=b8e0b0ba890ebd686604a6eb48402c78edefa8d2&profile_id=119" data-index="8">
+
+						<div class="slidebox__sidebar">
+							<img class="slidebox__sidebar-logo" src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/dayaroundworld.svg">
+
+							<div class="slidebox__sidebar-location">
+								<img class="map" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/12pm-boston-US1.png ">
+								<div class="time">
+									<span>12:00 PM</span>
+									<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/sun.svg">
+								</div>
+							</div>
+							<img class="slidebox__sidebar-mobile-image" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/12PM_USA-1024x692.jpg">
+							<div class="slidebox__sidebar-title">Boston, U.S.A.</div>
+							<div class="slidebox__sidebar-description">Budding scientists think about, question, and engage with the world around them at the William and Charlotte Bloomberg Science Education Center at the Museum of Science, newly named in honor of Mike Bloomberg’s parents.</div>
+							<div class="slidebox__sidebar-description-mobile">Budding scientists get ready to enter the William and Charlotte Bloomberg Science Education Center at the Museum of Science, newly named in honor of Mike Bloomberg’s parents.</div>
+						</div>
+
+						<div class="slidebox__share">
+
+							<ul>
+								<li class="slidebox__share-email">
+									<a href="mailto:?subject=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day.&amp;body=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day. Check Out: http://bloombg.org/2qketg4"><span>email</span></a>
+								</li>
+								<li class="slidebox__share-facebook">
+									<a href="http://www.facebook.com/share.php?u=http://bloombg.org/2qketg4&amp;title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day.&amp;picture=https://assets.bbhub.io/dotorg/sites/65/2017/05/aroundtheworld_share_v3.jpg" target="_blank"><span>facebook</span></a>
+								</li>
+								<li class="slidebox__share-twitter">
+									<a href="https://twitter.com/intent/tweet?url=http://bloombg.org/2qketg4&amp;text=See+where+%40BloombergDotOrg+is+working+around+the+world+at+any+given+moment+in+a+day.+pic.twitter.com%2F59e1vfjTsD&amp;" target="_blank"><span>twitter</span></a>
+
+								</li>
+								<li class="slidebox__share-linkedin">
+									<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://bloombg.org/2qketg4&title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day."
+									   target="_blank"><span>linkedin</span></a>
+								</li>
+							</ul>
+
+							<div class="slidebox__share-trigger js-slidebox__share">
+								<span>SHARE</span>
+								<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/share.svg">
+							</div>
+
+						</div>
+
+					</div>
+
+				
+					
+					<div class="slide  slide9" data-video="" data-index="9">
+
+						<div class="slidebox__sidebar">
+							<img class="slidebox__sidebar-logo" src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/dayaroundworld.svg">
+
+							<div class="slidebox__sidebar-location">
+								<img class="map" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/1pm-cape-town-south-africa.png ">
+								<div class="time">
+									<span>01:00 PM</span>
+									<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/sun.svg">
+								</div>
+							</div>
+							<img class="slidebox__sidebar-mobile-image" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/1PM_SOUTHAFRICA-1024x692.jpg">
+							<div class="slidebox__sidebar-title">Cape Town, South Africa</div>
+							<div class="slidebox__sidebar-description">Bloomberg L.P. employees meet and mentor students as part of Bloomberg Startup, a program designed to inspire and support the next generation of technologists and entrepreneurs.</div>
+							<div class="slidebox__sidebar-description-mobile">Bloomberg L.P. employees meet and mentor students as part of Bloomberg Startup, a program designed to inspire and support the next generation of technologists and entrepreneurs.</div>
+						</div>
+
+						<div class="slidebox__share">
+
+							<ul>
+								<li class="slidebox__share-email">
+									<a href="mailto:?subject=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day.&amp;body=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day. Check Out: http://bloombg.org/2qketg4	"><span>email</span></a>
+								</li>
+								<li class="slidebox__share-facebook">
+									<a href="http://www.facebook.com/share.php?u=http://bloombg.org/2qketg4	&amp;title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day.&amp;picture=https://assets.bbhub.io/dotorg/sites/65/2017/05/aroundtheworld_share_v3.jpg" target="_blank"><span>facebook</span></a>
+								</li>
+								<li class="slidebox__share-twitter">
+									<a href="https://twitter.com/intent/tweet?url=http://bloombg.org/2qketg4	&amp;text=See+where+%40BloombergDotOrg+is+working+around+the+world+at+any+given+moment+in+a+day.+pic.twitter.com%2F59e1vfjTsD&amp;" target="_blank"><span>twitter</span></a>
+
+								</li>
+								<li class="slidebox__share-linkedin">
+									<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://bloombg.org/2qketg4	&title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day."
+									   target="_blank"><span>linkedin</span></a>
+								</li>
+							</ul>
+
+							<div class="slidebox__share-trigger js-slidebox__share">
+								<span>SHARE</span>
+								<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/share.svg">
+							</div>
+
+						</div>
+
+					</div>
+
+				
+					
+					<div class="slide  slide10" data-video="" data-index="10">
+
+						<div class="slidebox__sidebar">
+							<img class="slidebox__sidebar-logo" src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/dayaroundworld.svg">
+
+							<div class="slidebox__sidebar-location">
+								<img class="map" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/2pm-maopa-US.png ">
+								<div class="time">
+									<span>02:00 PM</span>
+									<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/sun.svg">
+								</div>
+							</div>
+							<img class="slidebox__sidebar-mobile-image" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/2PM_USA-1024x692.jpg">
+							<div class="slidebox__sidebar-title">Moapa, Nevada</div>
+							<div class="slidebox__sidebar-description">Here in Moapa, Nevada, like in communities across the U.S., people are organizing grassroots support to close coal-fired power plants as part of the Beyond Coal campaign. Credit: Sierra Club</div>
+							<div class="slidebox__sidebar-description-mobile">Here in Moapa, Nevada, like in communities across the U.S., people are organizing grassroots support to close coal-fired power plants as part of the Beyond Coal campaign.
+Photo credit: Sierra Club </div>
+						</div>
+
+						<div class="slidebox__share">
+
+							<ul>
+								<li class="slidebox__share-email">
+									<a href="mailto:?subject=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day.&amp;body=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day. Check Out: http://bloombg.org/2qketg4"><span>email</span></a>
+								</li>
+								<li class="slidebox__share-facebook">
+									<a href="http://www.facebook.com/share.php?u=http://bloombg.org/2qketg4&amp;title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day.&amp;picture=https://assets.bbhub.io/dotorg/sites/65/2017/05/aroundtheworld_share_v3.jpg" target="_blank"><span>facebook</span></a>
+								</li>
+								<li class="slidebox__share-twitter">
+									<a href="https://twitter.com/intent/tweet?url=http://bloombg.org/2qketg4&amp;text=See+where+%40BloombergDotOrg+is+working+around+the+world+at+any+given+moment+in+a+day.+pic.twitter.com%2F59e1vfjTsD&amp;" target="_blank"><span>twitter</span></a>
+
+								</li>
+								<li class="slidebox__share-linkedin">
+									<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://bloombg.org/2qketg4&title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day."
+									   target="_blank"><span>linkedin</span></a>
+								</li>
+							</ul>
+
+							<div class="slidebox__share-trigger js-slidebox__share">
+								<span>SHARE</span>
+								<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/share.svg">
+							</div>
+
+						</div>
+
+					</div>
+
+				
+					
+					<div class="slide  slide11" data-video="" data-index="11">
+
+						<div class="slidebox__sidebar">
+							<img class="slidebox__sidebar-logo" src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/dayaroundworld.svg">
+
+							<div class="slidebox__sidebar-location">
+								<img class="map" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/3pm-sao-paolo-brazil.png ">
+								<div class="time">
+									<span>03:00 PM</span>
+									<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/sun.svg">
+								</div>
+							</div>
+							<img class="slidebox__sidebar-mobile-image" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/3PM_BRAZIL-1024x692.jpg">
+							<div class="slidebox__sidebar-title">São Paulo, Brazil</div>
+							<div class="slidebox__sidebar-description">Farmers around São Paulo are better able to access urban markets thanks to innovative ideas being piloted with support from Bloomberg Philanthropies’ Mayors Challenge. The city, and its idea, was the 2016 winner of the Latin America & Caribbean regional challenge. Credit: Fernando Pereira
+</div>
+							<div class="slidebox__sidebar-description-mobile">Farmers around São Paulo are better able to access urban markets thanks to innovative ideas being piloted with support from Bloomberg Philanthropies’ Mayors Challenge. The city, and its idea, was the 2016 winner of the Latin America & Caribbean regional challenge. Credit: Fernando Pereira</div>
+						</div>
+
+						<div class="slidebox__share">
+
+							<ul>
+								<li class="slidebox__share-email">
+									<a href="mailto:?subject=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day.&amp;body=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day. Check Out: http://bloombg.org/2qketg4"><span>email</span></a>
+								</li>
+								<li class="slidebox__share-facebook">
+									<a href="http://www.facebook.com/share.php?u=http://bloombg.org/2qketg4&amp;title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day.&amp;picture=https://assets.bbhub.io/dotorg/sites/65/2017/05/aroundtheworld_share_v3.jpg" target="_blank"><span>facebook</span></a>
+								</li>
+								<li class="slidebox__share-twitter">
+									<a href="https://twitter.com/intent/tweet?url=http://bloombg.org/2qketg4&amp;text=See+where+%40BloombergDotOrg+is+working+around+the+world+at+any+given+moment+in+a+day.+pic.twitter.com%2F59e1vfjTsD&amp;" target="_blank"><span>twitter</span></a>
+
+								</li>
+								<li class="slidebox__share-linkedin">
+									<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://bloombg.org/2qketg4&title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day."
+									   target="_blank"><span>linkedin</span></a>
+								</li>
+							</ul>
+
+							<div class="slidebox__share-trigger js-slidebox__share">
+								<span>SHARE</span>
+								<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/share.svg">
+							</div>
+
+						</div>
+
+					</div>
+
+				
+					
+					<div class="slide  slide12" data-video="" data-index="12">
+
+						<div class="slidebox__sidebar">
+							<img class="slidebox__sidebar-logo" src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/dayaroundworld.svg">
+
+							<div class="slidebox__sidebar-location">
+								<img class="map" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/4pm-queens-US.png ">
+								<div class="time">
+									<span>04:00 PM</span>
+									<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/sun.svg">
+								</div>
+							</div>
+							<img class="slidebox__sidebar-mobile-image" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/4PM_USA-1024x692.jpg">
+							<div class="slidebox__sidebar-title">Queens &amp; Brooklyn, U.S.A.</div>
+							<div class="slidebox__sidebar-description">Over 11,000 Bloomberg L.P. employees volunteer each year. Here they are planting beach grasses at the Marian Heiskell Nursery with Jamaica Bay-Rockaway Parks Conservancy.</div>
+							<div class="slidebox__sidebar-description-mobile">Over 11,000 Bloomberg L.P. employees volunteer each year. Here they are planting beach grasses at the Marian Heiskell Nursery with Jamaica Bay-Rockaway Parks Conservancy.</div>
+						</div>
+
+						<div class="slidebox__share">
+
+							<ul>
+								<li class="slidebox__share-email">
+									<a href="mailto:?subject=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day.&amp;body=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day. Check Out: http://bloombg.org/2qketg4"><span>email</span></a>
+								</li>
+								<li class="slidebox__share-facebook">
+									<a href="http://www.facebook.com/share.php?u=http://bloombg.org/2qketg4&amp;title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day.&amp;picture=https://assets.bbhub.io/dotorg/sites/65/2017/05/aroundtheworld_share_v3.jpg" target="_blank"><span>facebook</span></a>
+								</li>
+								<li class="slidebox__share-twitter">
+									<a href="https://twitter.com/intent/tweet?url=http://bloombg.org/2qketg4&amp;text=See+where+%40BloombergDotOrg+is+working+around+the+world+at+any+given+moment+in+a+day.+pic.twitter.com%2F59e1vfjTsD&amp;" target="_blank"><span>twitter</span></a>
+
+								</li>
+								<li class="slidebox__share-linkedin">
+									<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://bloombg.org/2qketg4&title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day."
+									   target="_blank"><span>linkedin</span></a>
+								</li>
+							</ul>
+
+							<div class="slidebox__share-trigger js-slidebox__share">
+								<span>SHARE</span>
+								<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/share.svg">
+							</div>
+
+						</div>
+
+					</div>
+
+				
+					
+					<div class="slide  slide13" data-video="" data-index="13">
+
+						<div class="slidebox__sidebar">
+							<img class="slidebox__sidebar-logo" src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/dayaroundworld.svg">
+
+							<div class="slidebox__sidebar-location">
+								<img class="map" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/9pm-miami-US.png ">
+								<div class="time">
+									<span>05:00 PM</span>
+									<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/sun.svg">
+								</div>
+							</div>
+							<img class="slidebox__sidebar-mobile-image" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/AroundTheWorld_slide_update-1024x692.jpg">
+							<div class="slidebox__sidebar-title">Miami, U.S.A.</div>
+							<div class="slidebox__sidebar-description">Mayors, artists, academics and other leaders gather to exchange ideas to solve the toughest urban challenges at convenings and events throughout the year. Here, urban thinkers from 35 countries have the chance to engage with the latest ideas at CityLab in Miami, Florida.</div>
+							<div class="slidebox__sidebar-description-mobile">Mayors, artists, academics and other leaders gather to exchange ideas to solve the toughest urban challenges at convenings and events throughout the year. Here, urban thinkers from 35 countries have the chance to engage with the latest ideas at CityLab in Miami, Florida.</div>
+						</div>
+
+						<div class="slidebox__share">
+
+							<ul>
+								<li class="slidebox__share-email">
+									<a href="mailto:?subject=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day.&amp;body=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day. Check Out: http://bloombg.org/2qketg4"><span>email</span></a>
+								</li>
+								<li class="slidebox__share-facebook">
+									<a href="http://www.facebook.com/share.php?u=http://bloombg.org/2qketg4&amp;title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day.&amp;picture=https://assets.bbhub.io/dotorg/sites/65/2017/05/aroundtheworld_share_v3.jpg" target="_blank"><span>facebook</span></a>
+								</li>
+								<li class="slidebox__share-twitter">
+									<a href="https://twitter.com/intent/tweet?url=http://bloombg.org/2qketg4&amp;text=See+where+%40BloombergDotOrg+is+working+around+the+world+at+any+given+moment+in+a+day.+pic.twitter.com%2F59e1vfjTsD&amp;" target="_blank"><span>twitter</span></a>
+
+								</li>
+								<li class="slidebox__share-linkedin">
+									<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://bloombg.org/2qketg4&title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day."
+									   target="_blank"><span>linkedin</span></a>
+								</li>
+							</ul>
+
+							<div class="slidebox__share-trigger js-slidebox__share">
+								<span>SHARE</span>
+								<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/share.svg">
+							</div>
+
+						</div>
+
+					</div>
+
+				
+					
+					<div class="slide  slide14" data-video="" data-index="14">
+
+						<div class="slidebox__sidebar">
+							<img class="slidebox__sidebar-logo" src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/dayaroundworld.svg">
+
+							<div class="slidebox__sidebar-location">
+								<img class="map" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/6pm-beijing-china.png ">
+								<div class="time">
+									<span>06:00 PM</span>
+									<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/sun.svg">
+								</div>
+							</div>
+							<img class="slidebox__sidebar-mobile-image" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/6PM_CHINA-1024x692.jpg">
+							<div class="slidebox__sidebar-title">Beijing, China</div>
+							<div class="slidebox__sidebar-description">With more than 7,000 member cities around the world, the Bloomberg-supported Global Covenant of Mayors for Climate & Energy convenes leaders to discuss efforts to combat climate change.</div>
+							<div class="slidebox__sidebar-description-mobile">With more than 7,000 member cities around the world, the Bloomberg-supported Global Covenant of Mayors for Climate & Energy convenes leaders to discuss efforts to combat climate change.</div>
+						</div>
+
+						<div class="slidebox__share">
+
+							<ul>
+								<li class="slidebox__share-email">
+									<a href="mailto:?subject=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day.&amp;body=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day. Check Out: http://bloombg.org/2qketg4	"><span>email</span></a>
+								</li>
+								<li class="slidebox__share-facebook">
+									<a href="http://www.facebook.com/share.php?u=http://bloombg.org/2qketg4	&amp;title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day.&amp;picture=https://assets.bbhub.io/dotorg/sites/65/2017/05/aroundtheworld_share_v3.jpg" target="_blank"><span>facebook</span></a>
+								</li>
+								<li class="slidebox__share-twitter">
+									<a href="https://twitter.com/intent/tweet?url=http://bloombg.org/2qketg4	&amp;text=See+where+%40BloombergDotOrg+is+working+around+the+world+at+any+given+moment+in+a+day.+pic.twitter.com%2F59e1vfjTsD&amp;" target="_blank"><span>twitter</span></a>
+
+								</li>
+								<li class="slidebox__share-linkedin">
+									<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://bloombg.org/2qketg4	&title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day."
+									   target="_blank"><span>linkedin</span></a>
+								</li>
+							</ul>
+
+							<div class="slidebox__share-trigger js-slidebox__share">
+								<span>SHARE</span>
+								<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/share.svg">
+							</div>
+
+						</div>
+
+					</div>
+
+				
+					
+					<div class="slide  slide15" data-video="https://player.vimeo.com/external/218190746.hd.mp4?s=46ef098c9868b9d4d2bfd9aadcb519612bd188c5&profile_id=119" data-index="15">
+
+						<div class="slidebox__sidebar">
+							<img class="slidebox__sidebar-logo" src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/dayaroundworld.svg">
+
+							<div class="slidebox__sidebar-location">
+								<img class="map" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/7pm-baltimore-US.png ">
+								<div class="time">
+									<span>07:00 PM</span>
+									<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/moon.svg">
+								</div>
+							</div>
+							<img class="slidebox__sidebar-mobile-image" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/7PM_USA-1024x692.jpg">
+							<div class="slidebox__sidebar-title">Johns Hopkins University, Baltimore, U.S.A.</div>
+							<div class="slidebox__sidebar-description">Scientists at the Bloomberg School of Public Health, pursuing life-saving medical research, complete their lab work.</div>
+							<div class="slidebox__sidebar-description-mobile">Scientists at the Bloomberg School of Public Health, pursuing life-saving medical research, complete their lab work.</div>
+						</div>
+
+						<div class="slidebox__share">
+
+							<ul>
+								<li class="slidebox__share-email">
+									<a href="mailto:?subject=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day.&amp;body=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day. Check Out: http://bloombg.org/2qketg4	"><span>email</span></a>
+								</li>
+								<li class="slidebox__share-facebook">
+									<a href="http://www.facebook.com/share.php?u=http://bloombg.org/2qketg4	&amp;title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day.&amp;picture=https://assets.bbhub.io/dotorg/sites/65/2017/05/aroundtheworld_share_v3.jpg" target="_blank"><span>facebook</span></a>
+								</li>
+								<li class="slidebox__share-twitter">
+									<a href="https://twitter.com/intent/tweet?url=http://bloombg.org/2qketg4	&amp;text=See+where+%40BloombergDotOrg+is+working+around+the+world+at+any+given+moment+in+a+day.+pic.twitter.com%2F59e1vfjTsD&amp;" target="_blank"><span>twitter</span></a>
+
+								</li>
+								<li class="slidebox__share-linkedin">
+									<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://bloombg.org/2qketg4	&title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day."
+									   target="_blank"><span>linkedin</span></a>
+								</li>
+							</ul>
+
+							<div class="slidebox__share-trigger js-slidebox__share">
+								<span>SHARE</span>
+								<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/share.svg">
+							</div>
+
+						</div>
+
+					</div>
+
+				
+					
+					<div class="slide  slide16" data-video="https://player.vimeo.com/external/218191355.hd.mp4?s=b22167ee40c326742d566b75fb1f4f4009b83487&profile_id=119" data-index="16">
+
+						<div class="slidebox__sidebar">
+							<img class="slidebox__sidebar-logo" src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/dayaroundworld.svg">
+
+							<div class="slidebox__sidebar-location">
+								<img class="map" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/8pm-ann-arbor-US.png ">
+								<div class="time">
+									<span>08:00 PM</span>
+									<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/moon.svg">
+								</div>
+							</div>
+							<img class="slidebox__sidebar-mobile-image" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/8PM_USA-1024x692.jpg">
+							<div class="slidebox__sidebar-title">Ann Arbor, U.S.A.</div>
+							<div class="slidebox__sidebar-description">Trained advisors from the CollegePoint program help high school students prepare for the college admission process by communicating through SMS text messaging and video chat, answering questions and encouraging students along the way. </div>
+							<div class="slidebox__sidebar-description-mobile">Trained advisors from the CollegePoint program help high school students prepare for the college admission process by communicating through SMS text messaging and video chat, answering questions and encouraging students along the way. Credit: Mark Gjukich</div>
+						</div>
+
+						<div class="slidebox__share">
+
+							<ul>
+								<li class="slidebox__share-email">
+									<a href="mailto:?subject=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day.&amp;body=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day. Check Out: http://bloombg.org/2qketg4	"><span>email</span></a>
+								</li>
+								<li class="slidebox__share-facebook">
+									<a href="http://www.facebook.com/share.php?u=http://bloombg.org/2qketg4	&amp;title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day.&amp;picture=https://assets.bbhub.io/dotorg/sites/65/2017/05/aroundtheworld_share_v3.jpg" target="_blank"><span>facebook</span></a>
+								</li>
+								<li class="slidebox__share-twitter">
+									<a href="https://twitter.com/intent/tweet?url=http://bloombg.org/2qketg4	&amp;text=See+where+%40BloombergDotOrg+is+working+around+the+world+at+any+given+moment+in+a+day.+pic.twitter.com%2F59e1vfjTsD&amp;" target="_blank"><span>twitter</span></a>
+
+								</li>
+								<li class="slidebox__share-linkedin">
+									<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://bloombg.org/2qketg4	&title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day."
+									   target="_blank"><span>linkedin</span></a>
+								</li>
+							</ul>
+
+							<div class="slidebox__share-trigger js-slidebox__share">
+								<span>SHARE</span>
+								<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/share.svg">
+							</div>
+
+						</div>
+
+					</div>
+
+				
+					
+					<div class="slide  slide17" data-video="" data-index="17">
+
+						<div class="slidebox__sidebar">
+							<img class="slidebox__sidebar-logo" src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/dayaroundworld.svg">
+
+							<div class="slidebox__sidebar-location">
+								<img class="map" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/5pm-mexico-city-mexico.png ">
+								<div class="time">
+									<span>09:00 PM</span>
+									<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/moon.svg">
+								</div>
+							</div>
+							<img class="slidebox__sidebar-mobile-image" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/5PM_MEXICO-1024x692.jpg">
+							<div class="slidebox__sidebar-title">Mexico City, Mexico</div>
+							<div class="slidebox__sidebar-description">Commuters heading home see subway ads that highlight the dangers of sugary beverages, part of the Obesity Prevention program’s efforts around the world. Photo Credit: Dzilam Méndez
+</div>
+							<div class="slidebox__sidebar-description-mobile">Commuters heading home see subway ads that highlight the dangers of sugary beverages, part of the Obesity Prevention program’s efforts around the world.
+Photo Credit: Dzilam Méndez</div>
+						</div>
+
+						<div class="slidebox__share">
+
+							<ul>
+								<li class="slidebox__share-email">
+									<a href="mailto:?subject=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day.&amp;body=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day. Check Out: http://bloombg.org/2qketg4	"><span>email</span></a>
+								</li>
+								<li class="slidebox__share-facebook">
+									<a href="http://www.facebook.com/share.php?u=http://bloombg.org/2qketg4	&amp;title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day.&amp;picture=https://assets.bbhub.io/dotorg/sites/65/2017/05/aroundtheworld_share_v3.jpg" target="_blank"><span>facebook</span></a>
+								</li>
+								<li class="slidebox__share-twitter">
+									<a href="https://twitter.com/intent/tweet?url=http://bloombg.org/2qketg4	&amp;text=See+where+%40BloombergDotOrg+is+working+around+the+world+at+any+given+moment+in+a+day.+pic.twitter.com%2F59e1vfjTsD&amp;" target="_blank"><span>twitter</span></a>
+
+								</li>
+								<li class="slidebox__share-linkedin">
+									<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://bloombg.org/2qketg4	&title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day."
+									   target="_blank"><span>linkedin</span></a>
+								</li>
+							</ul>
+
+							<div class="slidebox__share-trigger js-slidebox__share">
+								<span>SHARE</span>
+								<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/share.svg">
+							</div>
+
+						</div>
+
+					</div>
+
+				
+					
+					<div class="slide  slide18" data-video="https://player.vimeo.com/external/218191291.hd.mp4?s=a1c27fa8575387447d72ec50858bc4bfc8807799&profile_id=119" data-index="18">
+
+						<div class="slidebox__sidebar">
+							<img class="slidebox__sidebar-logo" src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/dayaroundworld.svg">
+
+							<div class="slidebox__sidebar-location">
+								<img class="map" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/10pm-shanghai-china.png ">
+								<div class="time">
+									<span>10:00 PM</span>
+									<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/moon.svg">
+								</div>
+							</div>
+							<img class="slidebox__sidebar-mobile-image" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/10PM_CHINA-1024x692.jpg">
+							<div class="slidebox__sidebar-title">Shanghai, China</div>
+							<div class="slidebox__sidebar-description">Shanghai celebrates its smoke-free law, adopted with support from the Bloomberg Initiative to Reduce Tobacco Use, by displaying tobacco control messages on its skyline.</div>
+							<div class="slidebox__sidebar-description-mobile">Shanghai celebrates its smoke-free law, adopted with support from the Bloomberg Initiative to Reduce Tobacco Use, by displaying tobacco control messages on its skyline.</div>
+						</div>
+
+						<div class="slidebox__share">
+
+							<ul>
+								<li class="slidebox__share-email">
+									<a href="mailto:?subject=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day.&amp;body=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day. Check Out: http://bloombg.org/2qketg4"><span>email</span></a>
+								</li>
+								<li class="slidebox__share-facebook">
+									<a href="http://www.facebook.com/share.php?u=http://bloombg.org/2qketg4&amp;title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day.&amp;picture=https://assets.bbhub.io/dotorg/sites/65/2017/05/aroundtheworld_share_v3.jpg" target="_blank"><span>facebook</span></a>
+								</li>
+								<li class="slidebox__share-twitter">
+									<a href="https://twitter.com/intent/tweet?url=http://bloombg.org/2qketg4&amp;text=See+where+%40BloombergDotOrg+is+working+around+the+world+at+any+given+moment+in+a+day.+pic.twitter.com%2F59e1vfjTsD&amp;" target="_blank"><span>twitter</span></a>
+
+								</li>
+								<li class="slidebox__share-linkedin">
+									<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://bloombg.org/2qketg4&title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day."
+									   target="_blank"><span>linkedin</span></a>
+								</li>
+							</ul>
+
+							<div class="slidebox__share-trigger js-slidebox__share">
+								<span>SHARE</span>
+								<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/share.svg">
+							</div>
+
+						</div>
+
+					</div>
+
+				
+					
+					<div class="slide  slide19" data-video="https://player.vimeo.com/external/218191308.hd.mp4?s=685617132b21ea3ea86d6384d559e855552f3a45&profile_id=119" data-index="19">
+
+						<div class="slidebox__sidebar">
+							<img class="slidebox__sidebar-logo" src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/dayaroundworld.svg">
+
+							<div class="slidebox__sidebar-location">
+								<img class="map" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/11pm-LA-upstate-NY-spartanburg-SC-gary-IN.png ">
+								<div class="time">
+									<span>11:00 PM</span>
+									<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/moon.svg">
+								</div>
+							</div>
+							<img class="slidebox__sidebar-mobile-image" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/11PM_USA-1024x692.jpg">
+							<div class="slidebox__sidebar-title">Across the U.S.A.</div>
+							<div class="slidebox__sidebar-description">Communities in Los Angeles, Upstate New York, Spartanburg, and Gary celebrate public art projects that address local challenges supported by the Public Art Challenge.</div>
+							<div class="slidebox__sidebar-description-mobile">Communities in Los Angeles, Upstate New York, Spartanburg, and Gary celebrate public art projects that address local challenges supported by the Public Art Challenge. Here images displayed on the cement banks of the Los Angeles River raise awareness about water conservation.</div>
+						</div>
+
+						<div class="slidebox__share">
+
+							<ul>
+								<li class="slidebox__share-email">
+									<a href="mailto:?subject=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day.&amp;body=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day. Check Out: http://bloombg.org/2qketg4	"><span>email</span></a>
+								</li>
+								<li class="slidebox__share-facebook">
+									<a href="http://www.facebook.com/share.php?u=http://bloombg.org/2qketg4	&amp;title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day.&amp;picture=https://assets.bbhub.io/dotorg/sites/65/2017/05/aroundtheworld_share_v3.jpg" target="_blank"><span>facebook</span></a>
+								</li>
+								<li class="slidebox__share-twitter">
+									<a href="https://twitter.com/intent/tweet?url=http://bloombg.org/2qketg4	&amp;text=See+where+%40BloombergDotOrg+is+working+around+the+world+at+any+given+moment+in+a+day.+pic.twitter.com%2F59e1vfjTsD&amp;" target="_blank"><span>twitter</span></a>
+
+								</li>
+								<li class="slidebox__share-linkedin">
+									<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://bloombg.org/2qketg4	&title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day."
+									   target="_blank"><span>linkedin</span></a>
+								</li>
+							</ul>
+
+							<div class="slidebox__share-trigger js-slidebox__share">
+								<span>SHARE</span>
+								<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/share.svg">
+							</div>
+
+						</div>
+
+					</div>
+
+				
+					
+					<div class="slide  slide20" data-video="https://player.vimeo.com/external/218459046.hd.mp4?s=3c066592758b7ff01b5047dc9ff4b2d4843e790d&profile_id=119" data-index="20">
+
+						<div class="slidebox__sidebar">
+							<img class="slidebox__sidebar-logo" src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/dayaroundworld.svg">
+
+							<div class="slidebox__sidebar-location">
+								<img class="map" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/12am-bangkok-thailand.png ">
+								<div class="time">
+									<span>12:00 AM</span>
+									<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/moon.svg">
+								</div>
+							</div>
+							<img class="slidebox__sidebar-mobile-image" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/12AM_THAILAND-1024x692.jpg">
+							<div class="slidebox__sidebar-title">Bangkok, Thailand</div>
+							<div class="slidebox__sidebar-description">Pedestrians safely browse storefronts along a busy street protected by temporary barriers, work supported by the Global Road Safety initiative.</div>
+							<div class="slidebox__sidebar-description-mobile">Pedestrians safely browse storefronts along a busy street protected by temporary barriers, work supported by the Global Road Safety initiative.</div>
+						</div>
+
+						<div class="slidebox__share">
+
+							<ul>
+								<li class="slidebox__share-email">
+									<a href="mailto:?subject=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day.&amp;body=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day. Check Out: http://bloombg.org/2qketg4	"><span>email</span></a>
+								</li>
+								<li class="slidebox__share-facebook">
+									<a href="http://www.facebook.com/share.php?u=http://bloombg.org/2qketg4	&amp;title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day.&amp;picture=https://assets.bbhub.io/dotorg/sites/65/2017/05/aroundtheworld_share_v3.jpg" target="_blank"><span>facebook</span></a>
+								</li>
+								<li class="slidebox__share-twitter">
+									<a href="https://twitter.com/intent/tweet?url=http://bloombg.org/2qketg4	&amp;text=See+where+%40BloombergDotOrg+is+working+around+the+world+at+any+given+moment+in+a+day.+pic.twitter.com%2F59e1vfjTsD&amp;" target="_blank"><span>twitter</span></a>
+
+								</li>
+								<li class="slidebox__share-linkedin">
+									<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://bloombg.org/2qketg4	&title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day."
+									   target="_blank"><span>linkedin</span></a>
+								</li>
+							</ul>
+
+							<div class="slidebox__share-trigger js-slidebox__share">
+								<span>SHARE</span>
+								<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/share.svg">
+							</div>
+
+						</div>
+
+					</div>
+
+				
+					
+					<div class="slide  slide21" data-video="" data-index="21">
+
+						<div class="slidebox__sidebar">
+							<img class="slidebox__sidebar-logo" src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/dayaroundworld.svg">
+
+							<div class="slidebox__sidebar-location">
+								<img class="map" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/1am-addis-ababa-ethiopia.png ">
+								<div class="time">
+									<span>01:00 AM</span>
+									<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/moon.svg">
+								</div>
+							</div>
+							<img class="slidebox__sidebar-mobile-image" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/1AM_RWANDA-1024x692.jpg">
+							<div class="slidebox__sidebar-title">Addis Ababa, Ethiopia</div>
+							<div class="slidebox__sidebar-description">Young girls do some late-night reading with light from their solar-powered Little Sun lamps, a Bloomberg-backed social enterprise.
+Photo Credit: Michael Tsegaye</div>
+							<div class="slidebox__sidebar-description-mobile">Young girls do some late-night reading with light from their solar-powered Little Sun lamps, a Bloomberg-backed social enterprise.
+Photo Credit: Michael Tsegaye</div>
+						</div>
+
+						<div class="slidebox__share">
+
+							<ul>
+								<li class="slidebox__share-email">
+									<a href="mailto:?subject=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day.&amp;body=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day. Check Out: http://bloombg.org/2qketg4"><span>email</span></a>
+								</li>
+								<li class="slidebox__share-facebook">
+									<a href="http://www.facebook.com/share.php?u=http://bloombg.org/2qketg4&amp;title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day.&amp;picture=https://assets.bbhub.io/dotorg/sites/65/2017/05/aroundtheworld_share_v3.jpg" target="_blank"><span>facebook</span></a>
+								</li>
+								<li class="slidebox__share-twitter">
+									<a href="https://twitter.com/intent/tweet?url=http://bloombg.org/2qketg4&amp;text=See+where+%40BloombergDotOrg+is+working+around+the+world+at+any+given+moment+in+a+day.+pic.twitter.com%2F59e1vfjTsD&amp;" target="_blank"><span>twitter</span></a>
+
+								</li>
+								<li class="slidebox__share-linkedin">
+									<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://bloombg.org/2qketg4&title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day."
+									   target="_blank"><span>linkedin</span></a>
+								</li>
+							</ul>
+
+							<div class="slidebox__share-trigger js-slidebox__share">
+								<span>SHARE</span>
+								<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/share.svg">
+							</div>
+
+						</div>
+
+					</div>
+
+				
+					
+					<div class="slide  slide22" data-video="" data-index="22">
+
+						<div class="slidebox__sidebar">
+							<img class="slidebox__sidebar-logo" src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/dayaroundworld.svg">
+
+							<div class="slidebox__sidebar-location">
+								<img class="map" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/2am-athens-greece.png ">
+								<div class="time">
+									<span>02:00 AM</span>
+									<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/moon.svg">
+								</div>
+							</div>
+							<img class="slidebox__sidebar-mobile-image" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/2AM_GREECE-1024x692.jpg">
+							<div class="slidebox__sidebar-title">Athens, Greece</div>
+							<div class="slidebox__sidebar-description">The night continues filled with voices of tourists from around the world, attracted to the city by renewed tourism efforts with the help of Bloomberg Associates.
+Credit: Athens Development and Destination Management Agency </div>
+							<div class="slidebox__sidebar-description-mobile">The night continues filled with voices of tourists from around the world, attracted to the city by renewed tourism efforts with the help of Bloomberg Associates.
+Credit: Athens Development and Destination Management Agency </div>
+						</div>
+
+						<div class="slidebox__share">
+
+							<ul>
+								<li class="slidebox__share-email">
+									<a href="mailto:?subject=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day.&amp;body=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day. Check Out: http://bloombg.org/2qketg4	"><span>email</span></a>
+								</li>
+								<li class="slidebox__share-facebook">
+									<a href="http://www.facebook.com/share.php?u=http://bloombg.org/2qketg4	&amp;title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day.&amp;picture=https://assets.bbhub.io/dotorg/sites/65/2017/05/aroundtheworld_share_v3.jpg" target="_blank"><span>facebook</span></a>
+								</li>
+								<li class="slidebox__share-twitter">
+									<a href="https://twitter.com/intent/tweet?url=http://bloombg.org/2qketg4	&amp;text=See+where+%40BloombergDotOrg+is+working+around+the+world+at+any+given+moment+in+a+day.+pic.twitter.com%2F59e1vfjTsD&amp;" target="_blank"><span>twitter</span></a>
+
+								</li>
+								<li class="slidebox__share-linkedin">
+									<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://bloombg.org/2qketg4	&title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day."
+									   target="_blank"><span>linkedin</span></a>
+								</li>
+							</ul>
+
+							<div class="slidebox__share-trigger js-slidebox__share">
+								<span>SHARE</span>
+								<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/share.svg">
+							</div>
+
+						</div>
+
+					</div>
+
+				
+					
+					<div class="slide  slide23" data-video="https://player.vimeo.com/external/218191008.hd.mp4?s=9712b4ba60171cdfa1e6513bdb2995d5c8871e57&profile_id=119" data-index="23">
+
+						<div class="slidebox__sidebar">
+							<img class="slidebox__sidebar-logo" src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/dayaroundworld.svg">
+
+							<div class="slidebox__sidebar-location">
+								<img class="map" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/3am-great-barrier-reef-oz1.png ">
+								<div class="time">
+									<span>03:00 AM</span>
+									<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/moon.svg">
+								</div>
+							</div>
+							<img class="slidebox__sidebar-mobile-image" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/3AM_AUSTRALIA-1024x692.jpg">
+							<div class="slidebox__sidebar-title">Great Barrier Reef, Australia</div>
+							<div class="slidebox__sidebar-description">Corals on the Great Barrier Reef and around the world are dying because of warmer water resulting from global climate change. 50 Reefs, a new Bloomberg-supported initiative, seeks to save these habitats. Photo Credit: The Ocean Agency</div>
+							<div class="slidebox__sidebar-description-mobile">A clownfish rests in an anemone on one of the world’s great coral reefs. 50 Reefs, a new Bloomberg-supported initiative, seeks to save these habitats from the threats of climate change.
+Photo Credit: The Ocean Agency</div>
+						</div>
+
+						<div class="slidebox__share">
+
+							<ul>
+								<li class="slidebox__share-email">
+									<a href="mailto:?subject=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day.&amp;body=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day. Check Out: http://bloombg.org/2qketg4"><span>email</span></a>
+								</li>
+								<li class="slidebox__share-facebook">
+									<a href="http://www.facebook.com/share.php?u=http://bloombg.org/2qketg4&amp;title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day.&amp;picture=https://assets.bbhub.io/dotorg/sites/65/2017/05/aroundtheworld_share_v3.jpg" target="_blank"><span>facebook</span></a>
+								</li>
+								<li class="slidebox__share-twitter">
+									<a href="https://twitter.com/intent/tweet?url=http://bloombg.org/2qketg4&amp;text=See+where+%40BloombergDotOrg+is+working+around+the+world+at+any+given+moment+in+a+day.+pic.twitter.com%2F59e1vfjTsD&amp;" target="_blank"><span>twitter</span></a>
+
+								</li>
+								<li class="slidebox__share-linkedin">
+									<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://bloombg.org/2qketg4&title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day."
+									   target="_blank"><span>linkedin</span></a>
+								</li>
+							</ul>
+
+							<div class="slidebox__share-trigger js-slidebox__share">
+								<span>SHARE</span>
+								<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/share.svg">
+							</div>
+
+						</div>
+
+					</div>
+
+				
+					
+					<div class="slide  slide24" data-video="" data-index="24">
+
+						<div class="slidebox__sidebar">
+							<img class="slidebox__sidebar-logo" src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/dayaroundworld.svg">
+
+							<div class="slidebox__sidebar-location">
+								<img class="map" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/4am-bogota-colombia.png ">
+								<div class="time">
+									<span>04:00 AM</span>
+									<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/moon.svg">
+								</div>
+							</div>
+							<img class="slidebox__sidebar-mobile-image" src="https://assets.bbhub.io/dotorg/sites/65/2017/05/4AM_COLOMBIA-1024x692.jpg">
+							<div class="slidebox__sidebar-title">Bogotá, Colombia</div>
+							<div class="slidebox__sidebar-description">Bloomberg Associates is supporting the city of Bogotá to undertake a homeless count and strategic planning effort to help the city’s residents who are most in need, no matter the time of day.</div>
+							<div class="slidebox__sidebar-description-mobile">Bloomberg Associates is supporting the city of Bogotá to undertake a homeless count and strategic planning effort to help the city’s residents who are most in need, no matter the time of day.</div>
+						</div>
+
+						<div class="slidebox__share">
+
+							<ul>
+								<li class="slidebox__share-email">
+									<a href="mailto:?subject=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day.%20&amp;body=See%20where%20Bloomberg%20Philanthropies%20is%20working%20around%20the%20world%20at%20any%20given%20moment%20in%20a%20day.%20 Check Out: http://bloombg.org/2qketg4"><span>email</span></a>
+								</li>
+								<li class="slidebox__share-facebook">
+									<a href="http://www.facebook.com/share.php?u=http://bloombg.org/2qketg4&amp;title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day.+&amp;picture=https://assets.bbhub.io/dotorg/sites/65/2017/05/aroundtheworld_share_v3.jpg" target="_blank"><span>facebook</span></a>
+								</li>
+								<li class="slidebox__share-twitter">
+									<a href="https://twitter.com/intent/tweet?url=http://bloombg.org/2qketg4&amp;text=See+where+%40BloombergDotOrg+is+working+around+the+world+at+any+given+moment+in+a+day.+pic.twitter.com%2F59e1vfjTsD&amp;" target="_blank"><span>twitter</span></a>
+
+								</li>
+								<li class="slidebox__share-linkedin">
+									<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://bloombg.org/2qketg4&title=See+where+Bloomberg+Philanthropies+is+working+around+the+world+at+any+given+moment+in+a+day.+"
+									   target="_blank"><span>linkedin</span></a>
+								</li>
+							</ul>
+
+							<div class="slidebox__share-trigger js-slidebox__share">
+								<span>SHARE</span>
+								<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/share.svg">
+							</div>
+
+						</div>
+
+					</div>
+
+				
+				</div>
+
+				<div class="slidebox__close">
+					<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/close-2.svg">
+				</div>
+
+				<div class="slidebox__indicators">
+					<span class="left">
+						<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/left.svg">
+					</span>
+					<span class="current">1</span>
+					<span class="slash">/</span>
+					<span class="total">24</span>
+					<span class="right">
+						<img src="https://annualreport.bloomberg.org/content/themes/report2017/public/assets/img/a-day-around/right.svg">
+					</span>
+				</div>
+
+			</div>
+
+			
+					<style>
+					   .slide.slide1 {
+							background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/BV_8686.jpg');
+						}
+
+						@media ( min-width: 768px ) and ( max-width: 1023px ) and ( orientation: portrait ) {
+							.slide.slide1 {
+								background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/iPad_AroundTheWorld_slide_001_5AM_BRAZIL.jpg');
+							}
+						}
+
+					   @media ( max-width: 767px ) and ( orientation: landscape ) {
+						   .slide.slide1 {
+							   background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/BV_8686-1024x682.jpg');
+						   }
+					   }
+					</style>
+
+					
+					<style>
+					   .slide.slide2 {
+							background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/coffee.jpg');
+						}
+
+						@media ( min-width: 768px ) and ( max-width: 1023px ) and ( orientation: portrait ) {
+							.slide.slide2 {
+								background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/iPad_AroundTheWorld_slide_002_6AM_RWANDA.jpg');
+							}
+						}
+
+					   @media ( max-width: 767px ) and ( orientation: landscape ) {
+						   .slide.slide2 {
+							   background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/Womens-Economic-Dev-Rwanda-Coffee-1024x682.jpg');
+						   }
+					   }
+					</style>
+
+					
+					<style>
+					   .slide.slide3 {
+							background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/San-Jose-i-teams-project.jpg');
+						}
+
+						@media ( min-width: 768px ) and ( max-width: 1023px ) and ( orientation: portrait ) {
+							.slide.slide3 {
+								background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/iPad_AroundTheWorld_slide_003_7AM_USA.jpg');
+							}
+						}
+
+					   @media ( max-width: 767px ) and ( orientation: landscape ) {
+						   .slide.slide3 {
+							   background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/San-Jose-i-teams-project-1024x681.jpg');
+						   }
+					   }
+					</style>
+
+					
+					<style>
+					   .slide.slide4 {
+							background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/drowning.jpg');
+						}
+
+						@media ( min-width: 768px ) and ( max-width: 1023px ) and ( orientation: portrait ) {
+							.slide.slide4 {
+								background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/iPad_AnnualReport_Desktop_slide_004_8AM_BANGLADESH.jpg');
+							}
+						}
+
+					   @media ( max-width: 767px ) and ( orientation: landscape ) {
+						   .slide.slide4 {
+							   background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/Bangladesh-Daycare-Program-1024x682.jpg');
+						   }
+					   }
+					</style>
+
+					
+					<style>
+					   .slide.slide5 {
+							background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/9AM_TANZANIA.jpg');
+						}
+
+						@media ( min-width: 768px ) and ( max-width: 1023px ) and ( orientation: portrait ) {
+							.slide.slide5 {
+								background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/iPad_AroundTheWorld_slide_005_9AM_TANZANIA.jpg');
+							}
+						}
+
+					   @media ( max-width: 767px ) and ( orientation: landscape ) {
+						   .slide.slide5 {
+							   background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/9AM_TANZANIA-1024x692.jpg');
+						   }
+					   }
+					</style>
+
+					
+					<style>
+					   .slide.slide6 {
+							background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/carcrash.jpg');
+						}
+
+						@media ( min-width: 768px ) and ( max-width: 1023px ) and ( orientation: portrait ) {
+							.slide.slide6 {
+								background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/iPad_AroundTheWorld_slide_006_10AM_GERMANY.jpg');
+							}
+						}
+
+					   @media ( max-width: 767px ) and ( orientation: landscape ) {
+						   .slide.slide6 {
+							   background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/10AM_GERMANY-1024x692.jpg');
+						   }
+					   }
+					</style>
+
+					
+					<style>
+					   .slide.slide7 {
+							background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/11AM_USA.jpg');
+						}
+
+						@media ( min-width: 768px ) and ( max-width: 1023px ) and ( orientation: portrait ) {
+							.slide.slide7 {
+								background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/iPad_AroundTheWorld_slide_007_11AM_USA.jpg');
+							}
+						}
+
+					   @media ( max-width: 767px ) and ( orientation: landscape ) {
+						   .slide.slide7 {
+							   background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/11AM_USA-1024x692.jpg');
+						   }
+					   }
+					</style>
+
+					
+					<style>
+					   .slide.slide8 {
+							background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/boston.jpg');
+						}
+
+						@media ( min-width: 768px ) and ( max-width: 1023px ) and ( orientation: portrait ) {
+							.slide.slide8 {
+								background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/iPad_AnnualReport_Desktop_slide_008_12PM_USA.jpg');
+							}
+						}
+
+					   @media ( max-width: 767px ) and ( orientation: landscape ) {
+						   .slide.slide8 {
+							   background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/12PM_USA-1024x692.jpg');
+						   }
+					   }
+					</style>
+
+					
+					<style>
+					   .slide.slide9 {
+							background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/1PM_SOUTHAFRICA.jpg');
+						}
+
+						@media ( min-width: 768px ) and ( max-width: 1023px ) and ( orientation: portrait ) {
+							.slide.slide9 {
+								background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/iPad_AroundTheWorld_slide_009_1PM_SOUTHAFRICA.jpg');
+							}
+						}
+
+					   @media ( max-width: 767px ) and ( orientation: landscape ) {
+						   .slide.slide9 {
+							   background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/1PM_SOUTHAFRICA-1024x692.jpg');
+						   }
+					   }
+					</style>
+
+					
+					<style>
+					   .slide.slide10 {
+							background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/2PM_USA.jpg');
+						}
+
+						@media ( min-width: 768px ) and ( max-width: 1023px ) and ( orientation: portrait ) {
+							.slide.slide10 {
+								background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/iPad_AroundTheWorld_slide_010_2PM_USA.jpg');
+							}
+						}
+
+					   @media ( max-width: 767px ) and ( orientation: landscape ) {
+						   .slide.slide10 {
+							   background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/2PM_USA-1024x692.jpg');
+						   }
+					   }
+					</style>
+
+					
+					<style>
+					   .slide.slide11 {
+							background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/3PM_BRAZIL.jpg');
+						}
+
+						@media ( min-width: 768px ) and ( max-width: 1023px ) and ( orientation: portrait ) {
+							.slide.slide11 {
+								background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/Sao-Paulo-Mayors-Challenge1.jpg');
+							}
+						}
+
+					   @media ( max-width: 767px ) and ( orientation: landscape ) {
+						   .slide.slide11 {
+							   background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/3PM_BRAZIL-1024x692.jpg');
+						   }
+					   }
+					</style>
+
+					
+					<style>
+					   .slide.slide12 {
+							background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/4PM_USA.jpg');
+						}
+
+						@media ( min-width: 768px ) and ( max-width: 1023px ) and ( orientation: portrait ) {
+							.slide.slide12 {
+								background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/iPad_AroundTheWorld_slide_012_4PM_USA.jpg');
+							}
+						}
+
+					   @media ( max-width: 767px ) and ( orientation: landscape ) {
+						   .slide.slide12 {
+							   background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/4PM_USA-1024x692.jpg');
+						   }
+					   }
+					</style>
+
+					
+					<style>
+					   .slide.slide13 {
+							background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/AroundTheWorld_slide_update.jpg');
+						}
+
+						@media ( min-width: 768px ) and ( max-width: 1023px ) and ( orientation: portrait ) {
+							.slide.slide13 {
+								background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/iPad_AroundTheWorld_slide_update.jpg');
+							}
+						}
+
+					   @media ( max-width: 767px ) and ( orientation: landscape ) {
+						   .slide.slide13 {
+							   background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/AroundTheWorld_slide_update-1024x692.jpg');
+						   }
+					   }
+					</style>
+
+					
+					<style>
+					   .slide.slide14 {
+							background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/6PM_CHINA.jpg');
+						}
+
+						@media ( min-width: 768px ) and ( max-width: 1023px ) and ( orientation: portrait ) {
+							.slide.slide14 {
+								background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/iPad_AroundTheWorld_slide_014_6PM_CHINA-.jpg');
+							}
+						}
+
+					   @media ( max-width: 767px ) and ( orientation: landscape ) {
+						   .slide.slide14 {
+							   background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/6PM_CHINA-1024x692.jpg');
+						   }
+					   }
+					</style>
+
+					
+					<style>
+					   .slide.slide15 {
+							background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/johns.jpg');
+						}
+
+						@media ( min-width: 768px ) and ( max-width: 1023px ) and ( orientation: portrait ) {
+							.slide.slide15 {
+								background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/iPad_AroundTheWorld_slide_015_7PM_USA.jpg');
+							}
+						}
+
+					   @media ( max-width: 767px ) and ( orientation: landscape ) {
+						   .slide.slide15 {
+							   background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/7PM_USA-1024x692.jpg');
+						   }
+					   }
+					</style>
+
+					
+					<style>
+					   .slide.slide16 {
+							background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/testing_1.jpg');
+						}
+
+						@media ( min-width: 768px ) and ( max-width: 1023px ) and ( orientation: portrait ) {
+							.slide.slide16 {
+								background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/iPad_AroundTheWorld_slide_016_8PM_USA.jpg');
+							}
+						}
+
+					   @media ( max-width: 767px ) and ( orientation: landscape ) {
+						   .slide.slide16 {
+							   background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/8PM_USA-1024x692.jpg');
+						   }
+					   }
+					</style>
+
+					
+					<style>
+					   .slide.slide17 {
+							background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/5PM_MEXICO.jpg');
+						}
+
+						@media ( min-width: 768px ) and ( max-width: 1023px ) and ( orientation: portrait ) {
+							.slide.slide17 {
+								background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/iPad_AroundTheWorld_slide_013_5PM_MEXICO.jpg');
+							}
+						}
+
+					   @media ( max-width: 767px ) and ( orientation: landscape ) {
+						   .slide.slide17 {
+							   background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/5PM_MEXICO-1024x692.jpg');
+						   }
+					   }
+					</style>
+
+					
+					<style>
+					   .slide.slide18 {
+							background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/shang.jpg');
+						}
+
+						@media ( min-width: 768px ) and ( max-width: 1023px ) and ( orientation: portrait ) {
+							.slide.slide18 {
+								background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/iPad_AroundTheWorld_slide_018_10PM_CHINA.jpg');
+							}
+						}
+
+					   @media ( max-width: 767px ) and ( orientation: landscape ) {
+						   .slide.slide18 {
+							   background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/10PM_CHINA-1024x692.jpg');
+						   }
+					   }
+					</style>
+
+					
+					<style>
+					   .slide.slide19 {
+							background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/PAC.jpg');
+						}
+
+						@media ( min-width: 768px ) and ( max-width: 1023px ) and ( orientation: portrait ) {
+							.slide.slide19 {
+								background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/iPad_AroundTheWorld_slide_019_11PM_USA.jpg');
+							}
+						}
+
+					   @media ( max-width: 767px ) and ( orientation: landscape ) {
+						   .slide.slide19 {
+							   background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/11PM_USA-1024x692.jpg');
+						   }
+					   }
+					</style>
+
+					
+					<style>
+					   .slide.slide20 {
+							background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/thailand_3.jpg');
+						}
+
+						@media ( min-width: 768px ) and ( max-width: 1023px ) and ( orientation: portrait ) {
+							.slide.slide20 {
+								background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/iPad_AroundTheWorld_slide_020_12AM_THAILAND.jpg');
+							}
+						}
+
+					   @media ( max-width: 767px ) and ( orientation: landscape ) {
+						   .slide.slide20 {
+							   background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/12AM_THAILAND-1024x692.jpg');
+						   }
+					   }
+					</style>
+
+					
+					<style>
+					   .slide.slide21 {
+							background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/1AM_RWANDA.jpg');
+						}
+
+						@media ( min-width: 768px ) and ( max-width: 1023px ) and ( orientation: portrait ) {
+							.slide.slide21 {
+								background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/iPad_AroundTheWorld_slide_021_1AM_RWANDA.jpg');
+							}
+						}
+
+					   @media ( max-width: 767px ) and ( orientation: landscape ) {
+						   .slide.slide21 {
+							   background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/1AM_RWANDA-1024x692.jpg');
+						   }
+					   }
+					</style>
+
+					
+					<style>
+					   .slide.slide22 {
+							background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/2AM_GREECE.jpg');
+						}
+
+						@media ( min-width: 768px ) and ( max-width: 1023px ) and ( orientation: portrait ) {
+							.slide.slide22 {
+								background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/iPad_AroundTheWorld_slide_022_2AM_GREECE.jpg');
+							}
+						}
+
+					   @media ( max-width: 767px ) and ( orientation: landscape ) {
+						   .slide.slide22 {
+							   background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/2AM_GREECE-1024x692.jpg');
+						   }
+					   }
+					</style>
+
+					
+					<style>
+					   .slide.slide23 {
+							background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/greatbarrier.jpg');
+						}
+
+						@media ( min-width: 768px ) and ( max-width: 1023px ) and ( orientation: portrait ) {
+							.slide.slide23 {
+								background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/iPad_AroundTheWorld_slide_023_3AM_AUSTRALIA.jpg');
+							}
+						}
+
+					   @media ( max-width: 767px ) and ( orientation: landscape ) {
+						   .slide.slide23 {
+							   background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/3AM_AUSTRALIA-1024x692.jpg');
+						   }
+					   }
+					</style>
+
+					
+					<style>
+					   .slide.slide24 {
+							background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/4AM_COLOMBIA.jpg');
+						}
+
+						@media ( min-width: 768px ) and ( max-width: 1023px ) and ( orientation: portrait ) {
+							.slide.slide24 {
+								background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/iPad_AroundTheWorld_slide_024_4AM_COLOMBIA.jpg');
+							}
+						}
+
+					   @media ( max-width: 767px ) and ( orientation: landscape ) {
+						   .slide.slide24 {
+							   background-image: url('https://assets.bbhub.io/dotorg/sites/65/2017/05/4AM_COLOMBIA-1024x692.jpg');
+						   }
+					   }
+					</style>
+
+					
+			<script type="text/html" id="wpb-modifications"></script><link rel='stylesheet' id='bloomberg-video-front-end-css'  href='https://annualreport.bloomberg.org/content/plugins/bloomberg-video/dist/css/front-end.css?ver=3f771324f1' type='text/css' media='all' />
+<script type='text/javascript'>
+!function(e){function r(r){for(var n,a,i=r[0],c=r[1],l=r[2],p=0,s=[];p<i.length;p++)a=i[p],Object.prototype.hasOwnProperty.call(o,a)&&o[a]&&s.push(o[a][0]),o[a]=0;for(n in c)Object.prototype.hasOwnProperty.call(c,n)&&(e[n]=c[n]);for(f&&f(r);s.length;)s.shift()();return u.push.apply(u,l||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,i=1;i<t.length;i++){var c=t[i];0!==o[c]&&(n=!1)}n&&(u.splice(r--,1),e=a(a.s=t[0]))}return e}var n={},o={5:0},u=[];function a(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,a),t.l=!0,t.exports}a.e=function(e){var r=[],t=o[e];if(0!==t)if(t)r.push(t[2]);else{var n=new Promise((function(r,n){t=o[e]=[r,n]}));r.push(t[2]=n);var u,i=document.createElement("script");i.charset="utf-8",i.timeout=120,a.nc&&i.setAttribute("nonce",a.nc),i.src=function(e){return a.p+""+({}[e]||e)+"."+{7:"5d016038",8:"a2b7ce98",9:"05302996",10:"085b4980",11:"05aa6dd4",12:"b59cbf59"}[e]+".js"}(e);var c=new Error;u=function(r){i.onerror=i.onload=null,clearTimeout(l);var t=o[e];if(0!==t){if(t){var n=r&&("load"===r.type?"missing":r.type),u=r&&r.target&&r.target.src;c.message="Loading chunk "+e+" failed.\n("+n+": "+u+")",c.name="ChunkLoadError",c.type=n,c.request=u,t[1](c)}o[e]=void 0}};var l=setTimeout((function(){u({type:"timeout",target:i})}),12e4);i.onerror=i.onload=u,document.head.appendChild(i)}return Promise.all(r)},a.m=e,a.c=n,a.d=function(e,r,t){a.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},a.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},a.t=function(e,r){if(1&r&&(e=a(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(a.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)a.d(t,n,function(r){return e[r]}.bind(null,n));return t},a.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return a.d(r,"a",r),r},a.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},a.p="dist/",a.oe=function(e){throw console.error(e),e};var i=window.webpackJsonp=window.webpackJsonp||[],c=i.push.bind(i);i.push=r,i=i.slice();for(var l=0;l<i.length;l++)r(i[l]);var f=c;t()}([]);
+</script>
+<script type='text/javascript' src='https://annualreport.bloomberg.org/content/themes/report2017/dist/vendors~main.aa0cfb65.js'></script>
+<script type='text/javascript' src='https://annualreport.bloomberg.org/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript'>
+window.__SITE_URL__ = "";
+window.__PUBLIC_PATH__ = "https://annualreport.bloomberg.org/content/themes/report2017/dist/";
+</script>
+<script type='text/javascript' src='https://annualreport.bloomberg.org/content/themes/report2017/dist/main.23977183.js'></script>
+<script type='text/javascript' src='https://annualreport.bloomberg.org/wp-includes/js/wp-embed.min.js?ver=62e44ee58d18941c34ba8ac1739920b55f5bec286ed420bc8bcf49a67ac9b345'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var bbg_video_data = {"ajax_url":"https:\/\/annualreport.bloomberg.org\/wp-admin\/admin-ajax.php","session_nounce":"2dcddff64e"};
+/* ]]> */
+</script>
+<script defer type='text/javascript' src='https://annualreport.bloomberg.org/content/plugins/bloomberg-video/dist/js/front-end.js?ver=f7548199bc'></script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"cd0676da66","applicationID":"545458313","transactionName":"YQEHZRZXWkpVVhVbWlhLJFIQX1tXG1wPVlBO","queueTime":0,"applicationTime":673,"atts":"TUYEE15NSUQ=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

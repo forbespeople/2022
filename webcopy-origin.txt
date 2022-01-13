@@ -1,0 +1,192 @@
+Uri: https://www.forbes.ru/milliardery-photogallery/425297-20-bogateyshih-lyudey-mira-2021-reyting-forbes
+File Name: C:\Downloaded Web Sites\www.forbes.ru\milliardery-photogallery\425297-20-bogateyshih-lyudey-mira-2021-reyting-forbes.html
+Content Type: text/html
+
+Uri: https://www.forbes.ru/favicon/apple-touch-icon.png?v=2
+File Name: C:\Downloaded Web Sites\www.forbes.ru\favicon\apple-touch-icon.png
+Content Type: image/png
+
+Uri: https://www.forbes.ru/favicon/favicon-32x32.png?v=2
+File Name: C:\Downloaded Web Sites\www.forbes.ru\favicon\favicon-32x32.png
+Content Type: image/png
+
+Uri: https://www.forbes.ru/favicon/favicon-16x16.png?v=2
+File Name: C:\Downloaded Web Sites\www.forbes.ru\favicon\favicon-16x16.png
+Content Type: image/png
+
+Uri: https://www.forbes.ru/favicon/site.webmanifest?v=2
+File Name: C:\Downloaded Web Sites\www.forbes.ru\favicon\site.webmanifest
+Content Type: application/manifest+json
+
+Uri: https://www.forbes.ru/favicon/safari-pinned-tab.svg?v=2
+File Name: C:\Downloaded Web Sites\www.forbes.ru\favicon\safari-pinned-tab.svg
+Content Type: image/svg+xml
+
+Uri: https://www.forbes.ru/favicon/favicon.ico?v=2
+File Name: C:\Downloaded Web Sites\www.forbes.ru\favicon\favicon.ico
+Content Type: image/x-icon
+
+Uri: https://cdn.forbes.ru/assets/5d0706b.js
+File Name: C:\Downloaded Web Sites\www.forbes.ru\assets\5d0706b.js
+Content Type: application/javascript
+
+Uri: https://cdn.forbes.ru/assets/23df198.js
+File Name: C:\Downloaded Web Sites\www.forbes.ru\assets\23df198.js
+Content Type: application/javascript
+
+Uri: https://cdn.forbes.ru/assets/6a3aedd.js
+File Name: C:\Downloaded Web Sites\www.forbes.ru\assets\6a3aedd.js
+Content Type: application/javascript
+
+Uri: https://cdn.forbes.ru/assets/css/4b70c4c.css
+File Name: C:\Downloaded Web Sites\www.forbes.ru\assets\css\4b70c4c.css
+Content Type: text/css
+
+Uri: https://cdn.forbes.ru/assets/d36c945.js
+File Name: C:\Downloaded Web Sites\www.forbes.ru\assets\d36c945.js
+Content Type: application/javascript
+
+Uri: https://cdn.forbes.ru/assets/fonts/merriweather-v25-latin_cyrillic-italic.7803420.woff2
+File Name: C:\Downloaded Web Sites\www.forbes.ru\assets\fonts\merriweather-v25-latin_cyrillic-italic.7803420.woff2
+Content Type: font/woff2
+
+Uri: https://cdn.forbes.ru/assets/fonts/merriweather-v25-latin_cyrillic-italic.5204db5.woff
+File Name: C:\Downloaded Web Sites\www.forbes.ru\assets\fonts\merriweather-v25-latin_cyrillic-italic.5204db5.woff
+Content Type: font/woff
+
+Uri: https://cdn.forbes.ru/assets/fonts/merriweather-v25-latin_cyrillic-700.efe9002.woff2
+File Name: C:\Downloaded Web Sites\www.forbes.ru\assets\fonts\merriweather-v25-latin_cyrillic-700.efe9002.woff2
+Content Type: font/woff2
+
+Uri: https://cdn.forbes.ru/assets/fonts/merriweather-v25-latin_cyrillic-700.e781934.woff
+File Name: C:\Downloaded Web Sites\www.forbes.ru\assets\fonts\merriweather-v25-latin_cyrillic-700.e781934.woff
+Content Type: font/woff
+
+Uri: https://cdn.forbes.ru/assets/fonts/source-sans-pro-v14-latin_cyrillic-regular.b279f26.woff2
+File Name: C:\Downloaded Web Sites\www.forbes.ru\assets\fonts\source-sans-pro-v14-latin_cyrillic-regular.b279f26.woff2
+Content Type: font/woff2
+
+Uri: https://cdn.forbes.ru/assets/fonts/source-sans-pro-v14-latin_cyrillic-regular.3dbf63f.woff
+File Name: C:\Downloaded Web Sites\www.forbes.ru\assets\fonts\source-sans-pro-v14-latin_cyrillic-regular.3dbf63f.woff
+Content Type: font/woff
+
+Uri: https://cdn.forbes.ru/assets/fonts/source-sans-pro-v14-latin_cyrillic-600.46ffc9b.woff2
+File Name: C:\Downloaded Web Sites\www.forbes.ru\assets\fonts\source-sans-pro-v14-latin_cyrillic-600.46ffc9b.woff2
+Content Type: font/woff2
+
+Uri: https://cdn.forbes.ru/assets/fonts/source-sans-pro-v14-latin_cyrillic-600.037af4e.woff
+File Name: C:\Downloaded Web Sites\www.forbes.ru\assets\fonts\source-sans-pro-v14-latin_cyrillic-600.037af4e.woff
+Content Type: font/woff
+
+Uri: https://cdn.forbes.ru/assets/fonts/source-sans-pro-v14-latin_cyrillic-700.5b27ac3.woff2
+File Name: C:\Downloaded Web Sites\www.forbes.ru\assets\fonts\source-sans-pro-v14-latin_cyrillic-700.5b27ac3.woff2
+Content Type: font/woff2
+
+Uri: https://cdn.forbes.ru/assets/fonts/source-sans-pro-v14-latin_cyrillic-700.dab71af.woff
+File Name: C:\Downloaded Web Sites\www.forbes.ru\assets\fonts\source-sans-pro-v14-latin_cyrillic-700.dab71af.woff
+Content Type: font/woff
+
+Uri: https://cdn.forbes.ru/assets/css/5dad4df.css
+File Name: C:\Downloaded Web Sites\www.forbes.ru\assets\css\5dad4df.css
+Content Type: text/css
+
+Uri: https://cdn.forbes.ru/assets/990ed8a.js
+File Name: C:\Downloaded Web Sites\www.forbes.ru\assets\990ed8a.js
+Content Type: application/javascript
+
+Uri: https://cdn.forbes.ru/assets/css/64d74cc.css
+File Name: C:\Downloaded Web Sites\www.forbes.ru\assets\css\64d74cc.css
+Content Type: text/css
+
+Uri: https://cdn.forbes.ru/assets/34d3dc7.js
+File Name: C:\Downloaded Web Sites\www.forbes.ru\assets\34d3dc7.js
+Content Type: application/javascript
+
+Uri: https://cdn.forbes.ru/assets/css/7c88815.css
+File Name: C:\Downloaded Web Sites\www.forbes.ru\assets\css\7c88815.css
+Content Type: text/css
+
+Uri: https://cdn.forbes.ru/assets/6e26c88.js
+File Name: C:\Downloaded Web Sites\www.forbes.ru\assets\6e26c88.js
+Content Type: application/javascript
+
+Uri: https://cdn.forbes.ru/assets/css/17d6b7c.css
+File Name: C:\Downloaded Web Sites\www.forbes.ru\assets\css\17d6b7c.css
+Content Type: text/css
+
+Uri: https://cdn.forbes.ru/assets/2b574ce.js
+File Name: C:\Downloaded Web Sites\www.forbes.ru\assets\2b574ce.js
+Content Type: application/javascript
+
+Uri: https://cdn.forbes.ru/assets/css/ec189a8.css
+File Name: C:\Downloaded Web Sites\www.forbes.ru\assets\css\ec189a8.css
+Content Type: text/css
+
+Uri: https://cdn.forbes.ru/assets/f33d5c0.js
+File Name: C:\Downloaded Web Sites\www.forbes.ru\assets\f33d5c0.js
+Content Type: application/javascript
+
+Uri: https://cdn.forbes.ru/assets/css/65c7fe0.css
+File Name: C:\Downloaded Web Sites\www.forbes.ru\assets\css\65c7fe0.css
+Content Type: text/css
+
+Uri: https://cdn.forbes.ru/assets/b55f175.js
+File Name: C:\Downloaded Web Sites\www.forbes.ru\assets\b55f175.js
+Content Type: application/javascript
+
+Uri: https://club.forbes.ru/
+File Name: C:\Downloaded Web Sites\www.forbes.ru\index.htm
+Content Type: text/html
+
+Uri: https://www.forbes.com/sites/kerryadolan/2021/04/06/forbes-35th-annual-worlds-billionaires-list-facts-and-figures-2021/
+File Name: C:\Downloaded Web Sites\www.forbes.ru\sites\kerryadolan\2021\04\06\forbes-35th-annual-worlds-billionaires-list-facts-and-figures-2021\index.htm
+Content Type: text/html
+
+Uri: https://www.aboutamazon.com/news/company-news/email-from-jeff-bezos-to-employees
+File Name: C:\Downloaded Web Sites\www.forbes.ru\news\company-news\email-from-jeff-bezos-to-employees.html
+Content Type: text/html
+
+Uri: https://www.sec.gov/Archives/edgar/data/1318605/000156459019012121/tsla-pre14a_20190611.htm
+File Name: C:\Downloaded Web Sites\www.forbes.ru\Archives\edgar\data\1318605\000156459019012121\tsla-pre14a_20190611.htm
+Content Type: text/html
+
+Uri: https://www.bloomberg.com/billionaires/profiles/lawrence-e-page/?sref=Y0jVLcFo
+File Name: C:\Downloaded Web Sites\www.forbes.ru\billionaires\profiles\lawrence-e-page\index.htm
+Content Type: text/html
+
+Uri: https://www.forbes.com/sites/noahkirsch/2017/08/30/this-spanish-retailer-just-became-the-richest-person-in-the-world/?utm_source=TWITTER&utm_medium=social&utm_content=1054819932&utm_campaign=sprinklrForbesMainTwitter
+File Name: C:\Downloaded Web Sites\www.forbes.ru\sites\noahkirsch\2017\08\30\this-spanish-retailer-just-became-the-richest-person-in-the-world\index.htm
+Content Type: text/html
+
+Uri: https://annualreport.bloomberg.org/
+File Name: C:\Downloaded Web Sites\www.forbes.ru\index-1.htm
+Content Type: text/html
+
+Uri: https://cdn.forbes.ru/themes/forbes/Personal_Data_Security.pdf
+File Name: C:\Downloaded Web Sites\www.forbes.ru\themes\forbes\Personal_Data_Security.pdf
+Content Type: application/pdf
+
+Uri: https://www.instagram.com/forbes.russia/
+File Name: C:\Downloaded Web Sites\www.forbes.ru\forbes.russia\index.htm
+Content Type: text/html
+
+Uri: https://flipboard.com/@ForbesRussia
+File Name: C:\Downloaded Web Sites\www.forbes.ru\@ForbesRussia.html
+Content Type: text/html
+
+Uri: https://www.youtube.com/channel/UCr2LSro_9yZvng8HR2eDExA
+File Name: C:\Downloaded Web Sites\www.forbes.ru\channel\UCr2LSro_9yZvng8HR2eDExA.html
+Content Type: text/html
+
+Uri: https://www.facebook.com/forbesrussia
+File Name: C:\Downloaded Web Sites\www.forbes.ru\forbesrussia.html
+Content Type: text/html
+
+Uri: https://podpiska.burda.ru/magazine/forbes
+File Name: C:\Downloaded Web Sites\www.forbes.ru\magazine\forbes.html
+Content Type: text/html
+
+Uri: https://www.gatesfoundation.org/Ideas/Media-Center/Press-Releases/2020/01/Gates-Foundation-Statement-on-Creation-of-Nonprofit-Agricultural-Research-Institute
+File Name: C:\Downloaded Web Sites\www.forbes.ru\Ideas\Media-Center\Press-Releases\2020\01\Gates-Foundation-Statement-on-Creation-of-Nonprofit-Agricultural-Research-Institute.html
+Content Type: text/html
+
